@@ -240,6 +240,20 @@
     });
   });
 
+  /* ---------- sticky bar ---------- */
+  var bar = document.querySelector('.searchbar'), sentinel = $('stick-sentinel');
+  if (bar && sentinel && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      var e = es[es.length - 1];
+      bar.classList.toggle('is-stuck', !e.isIntersecting && e.boundingClientRect.top < 0);
+    }).observe(sentinel);
+  }
+  if (bar && 'ResizeObserver' in window) {
+    new ResizeObserver(function () {
+      document.documentElement.style.setProperty('--stick-h', Math.ceil(bar.getBoundingClientRect().height) + 'px');
+    }).observe(bar);
+  }
+
   window.addEventListener('hashchange', function () {
     var id = decodeURIComponent(location.hash.slice(1));
     if (id && animals.length) goTo(id);
