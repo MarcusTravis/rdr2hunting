@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rdr2hunting.pages.dev/sitemap.xml

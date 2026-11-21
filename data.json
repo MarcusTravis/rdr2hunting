@@ -1,0 +1,1354 @@
+{
+ "meta": {
+  "game": "Red Dead Redemption 2",
+  "mode": "Story mode",
+  "currency": "USD (in-game dollars)",
+  "basis": "Base butcher prices before regional bonuses. Selling an animal where it is uncommon pays more, and honor or edition bonuses can also change what you see.",
+  "qualityTiers": [
+   "perfect",
+   "good",
+   "poor"
+  ],
+  "lastChecked": "2026-11-21"
+ },
+ "animals": [
+  {
+   "id": "whitetail-buck",
+   "name": "White-tailed deer (buck)",
+   "aka": [
+    "Whitetail buck",
+    "Buck",
+    "Deer buck"
+   ],
+   "group": "Deer & antelope",
+   "carcass": {
+    "item": "Buck Carcass (whole)",
+    "butcher": {
+     "perfect": 10.0,
+     "good": 6.0,
+     "poor": 4.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Buck Pelt",
+    "butcher": {
+     "perfect": 3.25,
+     "good": 1.95,
+     "poor": 1.3
+    },
+    "trapper": {
+     "perfect": 3.25,
+     "good": 1.95,
+     "poor": 1.3
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Mature Venison",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Hang the whole buck on your saddle for the best payout.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "whitetail-doe",
+   "name": "White-tailed deer (doe)",
+   "aka": [
+    "Doe",
+    "Deer",
+    "Whitetail deer"
+   ],
+   "group": "Deer & antelope",
+   "carcass": {
+    "item": "Deer Carcass (whole)",
+    "butcher": {
+     "perfect": 7.0,
+     "good": 4.2,
+     "poor": 2.8
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Deer Pelt",
+    "butcher": {
+     "perfect": 2.25,
+     "good": 1.35,
+     "poor": 0.9
+    },
+    "trapper": {
+     "perfect": 2.25,
+     "good": 1.35,
+     "poor": 0.9
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Mature Venison",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Common in most woodland. Worth carrying whole.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "elk",
+   "name": "Elk",
+   "aka": [
+    "Rocky Mountain elk",
+    "Bull elk",
+    "Cow elk"
+   ],
+   "group": "Deer & antelope",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Elk Pelt",
+    "butcher": {
+     "perfect": 6.5,
+     "good": 3.9,
+     "poor": 2.6
+    },
+    "trapper": {
+     "perfect": 6.5,
+     "good": 3.9,
+     "poor": 2.6
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Mature Venison",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Too big to carry, so roll up the pelt. Bulls also drop antlers.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "moose",
+   "name": "Moose",
+   "aka": [
+    "Western moose",
+    "Bull moose"
+   ],
+   "group": "Deer & antelope",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Moose Pelt",
+    "butcher": {
+     "perfect": 7.5,
+     "good": 4.5,
+     "poor": 3.0
+    },
+    "trapper": {
+     "perfect": 7.5,
+     "good": 4.5,
+     "poor": 3.0
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Mature Venison",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Rare and big. One of the best pelts outside legendary animals.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "pronghorn",
+   "name": "Pronghorn",
+   "aka": [
+    "Antelope",
+    "American pronghorn"
+   ],
+   "group": "Deer & antelope",
+   "carcass": {
+    "item": "Pronghorn Carcass (whole)",
+    "butcher": {
+     "perfect": 6.5,
+     "good": 3.9,
+     "poor": 2.6
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Pronghorn Hide",
+    "butcher": {
+     "perfect": 2.0,
+     "good": 1.2,
+     "poor": 0.8
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "Sources disagree on whether the trapper pays more than the butcher for this pelt, so the trapper price is left blank."
+   },
+   "meat": {
+    "item": "Mature Venison",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Plains grazer. The whole carcass beats skinning it.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "bighorn-ram",
+   "name": "Bighorn ram",
+   "aka": [
+    "Bighorn sheep",
+    "Ram",
+    "Big horn"
+   ],
+   "group": "Sheep",
+   "carcass": {
+    "item": "Ram Carcass (whole)",
+    "butcher": {
+     "perfect": 7.5,
+     "good": 4.5,
+     "poor": 3.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Ram Hide",
+    "butcher": {
+     "perfect": 2.75,
+     "good": 1.65,
+     "poor": 1.1
+    },
+    "trapper": {
+     "perfect": 2.75,
+     "good": 1.65,
+     "poor": 1.1
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Gristly Mutton",
+    "value": 0.4,
+    "verified": true
+   },
+   "tip": "Mountain sheep. Carry it whole, or skin for the horn.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "black-bear",
+   "name": "American black bear",
+   "aka": [
+    "Black bear",
+    "Bear"
+   ],
+   "group": "Bears",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Black Bear Pelt",
+    "butcher": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "trapper": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "Skin only. The rolled pelt takes the back of your horse.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "grizzly-bear",
+   "name": "Grizzly bear",
+   "aka": [
+    "Brown bear",
+    "Grizzly",
+    "Bear"
+   ],
+   "group": "Bears",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Bear Pelt",
+    "butcher": {
+     "perfect": 7.5,
+     "good": 4.5,
+     "poor": 3.0
+    },
+    "trapper": {
+     "perfect": 7.5,
+     "good": 4.5,
+     "poor": 3.0
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "Dangerous and worth it. Skin only, one pelt per trip.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "bison",
+   "name": "American bison",
+   "aka": [
+    "Bison",
+    "Buffalo"
+   ],
+   "group": "Large grazers",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Bison Pelt",
+    "butcher": {
+     "perfect": 5.0,
+     "good": 3.0,
+     "poor": 2.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "Sources disagree on whether the trapper pays more than the butcher for this pelt, so the trapper price is left blank."
+   },
+   "meat": {
+    "item": "Prime Beef",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Skin only. Herds roam the open plains.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "boar",
+   "name": "Wild boar",
+   "aka": [
+    "Boar",
+    "Hog",
+    "Feral pig"
+   ],
+   "group": "Pigs",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Boar Pelt",
+    "butcher": {
+     "perfect": 2.1,
+     "good": 1.26,
+     "poor": 0.84
+    },
+    "trapper": {
+     "perfect": 2.1,
+     "good": 1.26,
+     "poor": 0.84
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Tender Pork Loin",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Too heavy to carry whole. The pelt lies flat on your horse.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "javelina",
+   "name": "Collared peccary (javelina)",
+   "aka": [
+    "Javelina",
+    "Peccary"
+   ],
+   "group": "Pigs",
+   "carcass": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+   },
+   "pelt": {
+    "item": "Collared Peccary Pig Pelt",
+    "butcher": {
+     "perfect": 1.4,
+     "good": 0.84,
+     "poor": 0.56
+    },
+    "trapper": {
+     "perfect": 1.4,
+     "good": 0.84,
+     "poor": 0.56
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Tender Pork Loin",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Desert pig. Pelt only, laid flat on the horse.",
+   "weapon": "Repeater or regular arrows"
+  },
+  {
+   "id": "cougar",
+   "name": "Cougar",
+   "aka": [
+    "Mountain lion",
+    "Puma"
+   ],
+   "group": "Big cats",
+   "carcass": {
+    "item": "Cougar Carcass (whole)",
+    "butcher": {
+     "perfect": 13.5,
+     "good": 8.1,
+     "poor": 5.4
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Cougar Pelt",
+    "butcher": {
+     "perfect": 5.0,
+     "good": 3.0,
+     "poor": 2.0
+    },
+    "trapper": {
+     "perfect": 5.0,
+     "good": 3.0,
+     "poor": 2.0
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "One of the best whole-carcass payouts. Approach with care.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "panther",
+   "name": "Florida panther",
+   "aka": [
+    "Panther"
+   ],
+   "group": "Big cats",
+   "carcass": {
+    "item": "Panther Carcass (whole)",
+    "butcher": {
+     "perfect": 14.0,
+     "good": 8.4,
+     "poor": 5.6
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Panther Pelt",
+    "butcher": {
+     "perfect": 6.25,
+     "good": 3.75,
+     "poor": 2.5
+    },
+    "trapper": {
+     "perfect": 6.25,
+     "good": 3.75,
+     "poor": 2.5
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "Swamp cat. Whole carcass pays even more than a cougar.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "wolf",
+   "name": "Gray wolf",
+   "aka": [
+    "Wolf",
+    "Timber wolf"
+   ],
+   "group": "Wild dogs",
+   "carcass": {
+    "item": "Wolf Carcass (whole)",
+    "butcher": {
+     "perfect": 5.25,
+     "good": 3.15,
+     "poor": 2.1
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Wolf Pelt",
+    "butcher": {
+     "perfect": 1.5,
+     "good": 0.9,
+     "poor": 0.6
+    },
+    "trapper": {
+     "perfect": 1.5,
+     "good": 0.9,
+     "poor": 0.6
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "Packs hunt together. Carcass is worth more than the pelt.",
+   "weapon": "High-power rifle or poison arrows"
+  },
+  {
+   "id": "coyote",
+   "name": "Coyote",
+   "aka": [
+    "Prairie wolf"
+   ],
+   "group": "Wild dogs",
+   "carcass": {
+    "item": "Coyote Carcass (whole)",
+    "butcher": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Coyote Pelt",
+    "butcher": {
+     "perfect": 1.5,
+     "good": 0.9,
+     "poor": 0.6
+    },
+    "trapper": {
+     "perfect": 1.5,
+     "good": 0.9,
+     "poor": 0.6
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Everywhere and cheap, but easy money if you pass a butcher.",
+   "weapon": "Repeater or regular arrows"
+  },
+  {
+   "id": "fox",
+   "name": "Fox",
+   "aka": [
+    "Red fox",
+    "Gray fox",
+    "Swift fox"
+   ],
+   "group": "Wild dogs",
+   "carcass": {
+    "item": "Fox Carcass (whole)",
+    "butcher": {
+     "perfect": 4.5,
+     "good": 2.7,
+     "poor": 1.8
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Fox Pelt",
+    "butcher": {
+     "perfect": 2.25,
+     "good": 1.35,
+     "poor": 0.9
+    },
+    "trapper": {
+     "perfect": 2.25,
+     "good": 1.35,
+     "poor": 0.9
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Pelt and skinned carcass sell for the same base price.",
+   "weapon": "Repeater or improved arrows"
+  },
+  {
+   "id": "alligator",
+   "name": "American alligator",
+   "aka": [
+    "Alligator",
+    "Gator"
+   ],
+   "group": "Reptiles",
+   "carcass": {
+    "item": "Small Alligator Carcass (whole)",
+    "butcher": {
+     "perfect": 6.5,
+     "good": 3.9,
+     "poor": 2.6
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank.",
+    "note": "Small alligators only. Large alligators are too heavy to carry and can only be skinned."
+   },
+   "pelt": {
+    "item": "Alligator Skin",
+    "butcher": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "trapper": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source).",
+    "note": "Story-mode tables list one alligator skin price. Large-alligator skins may differ; not confirmed."
+   },
+   "meat": {
+    "item": "Big Game Meat",
+    "value": 0.75,
+    "verified": true
+   },
+   "tip": "Small gators can ride on your horse. Big ones can only be skinned.",
+   "weapon": "High-power rifle or improved arrows"
+  },
+  {
+   "id": "rabbit",
+   "name": "Cottontail rabbit",
+   "aka": [
+    "Rabbit",
+    "Jackrabbit",
+    "Bunny"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Rabbit Carcass (whole)",
+    "butcher": {
+     "perfect": 3.5,
+     "good": 2.1,
+     "poor": 1.4
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Rabbit Pelt",
+    "butcher": {
+     "perfect": 1.15,
+     "good": 0.69,
+     "poor": 0.46
+    },
+    "trapper": {
+     "perfect": 1.15,
+     "good": 0.69,
+     "poor": 0.46
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Game Meat",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Quick, small and easy to carry whole.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "raccoon",
+   "name": "Raccoon",
+   "aka": [
+    "Racoon",
+    "North American raccoon"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Raccoon Carcass (whole)",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Raccoon Pelt",
+    "butcher": {
+     "perfect": 1.2,
+     "good": 0.72,
+     "poor": 0.48
+    },
+    "trapper": {
+     "perfect": 1.2,
+     "good": 0.72,
+     "poor": 0.48
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Night forager near water and towns.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "beaver",
+   "name": "Beaver",
+   "aka": [
+    "North American beaver"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Beaver Carcass (whole)",
+    "butcher": {
+     "perfect": 5.25,
+     "good": 3.15,
+     "poor": 2.1
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Beaver Pelt",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Best-paying small animal on this list. Look along rivers.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "muskrat",
+   "name": "Muskrat",
+   "aka": [],
+   "group": "Small game",
+   "carcass": {
+    "item": "Muskrat Carcass (whole)",
+    "butcher": {
+     "perfect": 4.0,
+     "good": 2.4,
+     "poor": 1.6
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Muskrat Pelt",
+    "butcher": {
+     "perfect": 1.95,
+     "good": 1.17,
+     "poor": 0.78
+    },
+    "trapper": {
+     "perfect": 1.95,
+     "good": 1.17,
+     "poor": 0.78
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Wetland rodent that pays better than you'd think.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "badger",
+   "name": "American badger",
+   "aka": [
+    "Badger"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Badger Carcass (whole)",
+    "butcher": {
+     "perfect": 3.0,
+     "good": 1.8,
+     "poor": 1.2
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Badger Pelt",
+    "butcher": {
+     "perfect": 1.25,
+     "good": 0.75,
+     "poor": 0.5
+    },
+    "trapper": {
+     "perfect": 1.25,
+     "good": 0.75,
+     "poor": 0.5
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Small digger. Low value but quick to grab.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "skunk",
+   "name": "Skunk",
+   "aka": [
+    "Striped skunk"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Skunk Carcass (whole)",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Skunk Pelt",
+    "butcher": {
+     "perfect": 0.95,
+     "good": 0.57,
+     "poor": 0.38
+    },
+    "trapper": {
+     "perfect": 0.95,
+     "good": 0.57,
+     "poor": 0.38
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Low value. Mind the spray.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "opossum",
+   "name": "Opossum",
+   "aka": [
+    "Possum",
+    "Virginia opossum"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Opossum Carcass (whole)",
+    "butcher": {
+     "perfect": 2.0,
+     "good": 1.2,
+     "poor": 0.8
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Opossum Pelt",
+    "butcher": {
+     "perfect": 0.9,
+     "good": 0.54,
+     "poor": 0.36
+    },
+    "trapper": {
+     "perfect": 0.9,
+     "good": 0.54,
+     "poor": 0.36
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Low value, but fits easily on the saddle.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "armadillo",
+   "name": "Armadillo",
+   "aka": [
+    "Nine-banded armadillo"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Armadillo Carcass (whole)",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Armadillo Skin",
+    "butcher": {
+     "perfect": 1.1,
+     "good": 0.66,
+     "poor": 0.44
+    },
+    "trapper": {
+     "perfect": 1.1,
+     "good": 0.66,
+     "poor": 0.44
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Found in New Austin. Sells for more outside its home range.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "squirrel",
+   "name": "Squirrel",
+   "aka": [
+    "Gray squirrel",
+    "Red squirrel"
+   ],
+   "group": "Small game",
+   "carcass": {
+    "item": "Squirrel Carcass (whole)",
+    "butcher": {
+     "perfect": 1.75,
+     "good": 1.05,
+     "poor": 0.7
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Squirrel Pelt",
+    "butcher": {
+     "perfect": 0.75,
+     "good": 0.45,
+     "poor": 0.3
+    },
+    "trapper": {
+     "perfect": 0.75,
+     "good": 0.45,
+     "poor": 0.3
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Tiny. It goes in your satchel whole.",
+   "weapon": "Small game arrows"
+  },
+  {
+   "id": "snake",
+   "name": "Snake",
+   "aka": [
+    "Rattlesnake",
+    "Boa",
+    "Cottonmouth",
+    "Copperhead"
+   ],
+   "group": "Reptiles",
+   "carcass": {
+    "item": "Snake Carcass (whole)",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": "Snake Skin",
+    "butcher": {
+     "perfect": 1.15,
+     "good": 0.69,
+     "poor": 0.46
+    },
+    "trapper": {
+     "perfect": 1.15,
+     "good": 0.69,
+     "poor": 0.46
+    },
+    "verified": true,
+    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+   },
+   "meat": {
+    "item": "Stringy Meat",
+    "value": 0.25,
+    "verified": true
+   },
+   "tip": "Many species share these base prices.",
+   "weapon": "Small game arrows"
+  },
+  {
+   "id": "turkey",
+   "name": "Wild turkey",
+   "aka": [
+    "Turkey"
+   ],
+   "group": "Birds",
+   "carcass": {
+    "item": "Turkey Carcass (whole)",
+    "butcher": {
+     "perfect": 2.0,
+     "good": 1.2,
+     "poor": 0.8
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Birds give feathers, not a pelt. Turkey Feather: $0.45 each."
+   },
+   "meat": {
+    "item": "Plump Bird Meat",
+    "value": 0.4,
+    "verified": true
+   },
+   "tip": "Carry whole or pluck it for feathers.",
+   "weapon": "Varmint rifle"
+  },
+  {
+   "id": "pheasant",
+   "name": "Pheasant",
+   "aka": [
+    "Ring-necked pheasant"
+   ],
+   "group": "Birds",
+   "carcass": {
+    "item": "Pheasant Carcass (whole)",
+    "butcher": {
+     "perfect": 3.0,
+     "good": 1.8,
+     "poor": 1.2
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Birds give feathers, not a pelt. Pheasant Feather: $0.45 each."
+   },
+   "meat": {
+    "item": "Game Meat",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Upland bird. Whole carcass beats plucking.",
+   "weapon": "Small game arrows"
+  },
+  {
+   "id": "duck",
+   "name": "Duck",
+   "aka": [
+    "Mallard",
+    "Pekin duck"
+   ],
+   "group": "Birds",
+   "carcass": {
+    "item": "Duck Carcass (whole)",
+    "butcher": {
+     "perfect": 2.75,
+     "good": 1.65,
+     "poor": 1.1
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Birds give feathers, not a pelt. Duck Feather: $0.30 each."
+   },
+   "meat": {
+    "item": "Game Meat",
+    "value": 0.6,
+    "verified": true
+   },
+   "tip": "Common on lakes and ponds.",
+   "weapon": "Small game arrows"
+  },
+  {
+   "id": "goose",
+   "name": "Canada goose",
+   "aka": [
+    "Goose"
+   ],
+   "group": "Birds",
+   "carcass": {
+    "item": "Goose Carcass (whole)",
+    "butcher": {
+     "perfect": 2.5,
+     "good": 1.5,
+     "poor": 1.0
+    },
+    "trapper": {
+     "perfect": null,
+     "good": null,
+     "poor": null
+    },
+    "verified": true,
+    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+   },
+   "pelt": {
+    "item": null,
+    "butcher": null,
+    "trapper": null,
+    "verified": null,
+    "note": "Birds give feathers, not a pelt. Goose Feather: $0.45 each."
+   },
+   "meat": {
+    "item": "Plump Bird Meat",
+    "value": 0.4,
+    "verified": true
+   },
+   "tip": "Bigger bird with plump meat.",
+   "weapon": "Varmint rifle"
+  }
+ ]
+}
