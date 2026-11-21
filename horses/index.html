@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horse Hunting — RDR2 Horse Fence Prices (Story Mode)</title>
+<meta name="description" content="See what the Clemens Cove horse fence pays for every story mode horse in Red Dead Redemption 2, from a fresh theft to a fully bonded mount.">
+<link rel="canonical" href="https://rdr2hunting.pages.dev/horses/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RDR2 Hunting Prices">
+<meta property="og:title" content="Horse Hunting — RDR2 Horse Fence Prices (Story Mode)">
+<meta property="og:description" content="See what the Clemens Cove horse fence pays for every story mode horse in Red Dead Redemption 2, from a fresh theft to a fully bonded mount.">
+<meta property="og:url" content="https://rdr2hunting.pages.dev/horses/">
+<meta property="og:image" content="https://rdr2hunting.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Horse Hunting — RDR2 Horse Fence Prices (Story Mode)">
+<meta name="twitter:description" content="See what the Clemens Cove horse fence pays for every story mode horse in Red Dead Redemption 2, from a fresh theft to a fully bonded mount.">
+<meta name="twitter:image" content="https://rdr2hunting.pages.dev/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/horses/horses.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Horse Hunting — RDR2 Horse Fence Prices (Story Mode)","url":"https://rdr2hunting.pages.dev/horses/","isPartOf":{"@type":"WebSite","name":"RDR2 Hunting Prices","url":"https://rdr2hunting.pages.dev/"}}</script>
+</head>
+<body>
+<a class="skip" href="#grid">Skip to the horses</a>
+
+<header class="site-header">
+  <nav class="sitenav" aria-label="Site sections"><a href="/">Animals</a><a href="/horses/" aria-current="page">Horse Hunting</a></nav>
+  <p class="eyebrow">Story mode horse fence reference</p>
+  <h1>Horse Hunting</h1>
+  <p class="lede">What the horse fence in Clemens Cove pays you for stolen, wild and bought horses.</p>
+</header>
+
+<div id="stick-sentinel" class="sentinel" aria-hidden="true"></div>
+<div class="searchbar">
+  <div class="searchwrap">
+   <div class="searchfield">
+    <label for="search" class="sr">Search horses</label>
+    <div class="field">
+      <svg class="icon" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" aria-haspopup="listbox" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Search, like “arabian” or “rachel”">
+      <button id="clear" class="clear" type="button" aria-label="Clear search" hidden>
+        <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <kbd class="slash" aria-hidden="true">/</kbd>
+    </div>
+    <ul id="suggestions" class="suggestions" role="listbox" aria-label="Suggestions" hidden></ul>
+   </div>
+   <fieldset class="seg cats" id="cats">
+      <legend class="sr">Horse category</legend>
+      <input type="radio" name="cat" id="cat-any" value="any" checked><label for="cat-any">Any</label>
+      <input type="radio" name="cat" id="cat-common" value="common"><label for="cat-common">Common</label>
+      <input type="radio" name="cat" id="cat-wild" value="wild"><label for="cat-wild">Wild</label>
+      <input type="radio" name="cat" id="cat-stable" value="stable"><label for="cat-stable">Stable</label>
+      <input type="radio" name="cat" id="cat-special" value="special"><label for="cat-special">Special</label>
+   </fieldset>
+   <button type="button" id="sort" class="sortbtn" data-sort="desc" aria-pressed="true" aria-label="Sorted by price, highest first" title="Sorted by price, highest first"><span class="sortin"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path class="up" d="M5 13.5V2.5M2 5.5l3-3 3 3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path class="down" d="M11 2.5v11M8 10.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sortlbl">Price</span></span></button>
+  </div>
+</div>
+
+<main>
+  <section class="controls" aria-labelledby="legend-h">
+    <h2 id="legend-h" class="sr">How prices work</h2>
+    <p class="legend" id="legend">The fence pays a fixed share of each horse's base value, and the share grows as your bond with the horse does. Each card shows the payout at bond 1 and at <strong>bond 4</strong>, the max, which is what the Price sort uses.</p>
+    <p id="count" class="count" aria-live="polite">Loading…</p>
+  </section>
+
+  <div id="grid" class="grid" tabindex="-1"></div>
+  <p id="empty" class="msg" role="status" hidden>No horses match. Try a shorter word.</p>
+  <p id="error" class="msg error" role="alert" hidden>Sorry, the horse prices could not be loaded. Check your connection and reload the page. If you opened this file straight from disk, serve it with a local web server instead.</p>
+
+  <section class="notes" aria-labelledby="notes-h">
+    <h2 id="notes-h">Notes</h2>
+    <ul>
+      <li>The horse fence is in Clemens Cove, run by the Davies brothers. It opens once you finish “Horse Flesh for Dinner” in chapter 3.</li>
+      <li>The fence at Emerald Ranch only takes wagons, not horses.</li>
+      <li>Payout is a share of the horse's base value: 4% at bond 0, 8% at bond 1, 12% at bond 2, 20% at bond 3 and 30% at bond 4.</li>
+      <li>A horse you bought can't be fenced at bond 0. Bond it at least once first.</li>
+      <li>Honor discounts at the stable change what you pay, not the base value the fence uses.</li>
+      <li>All prices are story mode.</li>
+      <li>Where a gift or bonus horse's payout isn't confirmed, the price is left blank.</li>
+      <li>Base values come from the Red Dead Wiki breed tables and were checked against max-bond payouts reported by players.</li>
+    </ul>
+    <p class="muted">Last checked: <time id="checked">…</time></p>
+  </section>
+
+  <p class="disclaimer">Unofficial fan reference, not affiliated with Rockstar Games. Red Dead Redemption 2 is a trademark of Take-Two Interactive.</p>
+</main>
+
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<button type="button" id="resetpage" class="resetpage" aria-label="Reset page and bring back 0 removed horses" hidden><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13.5 8a5.5 5.5 0 1 0-1.7 3.97M13.5 3.5V8H9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" transform="translate(16 0) scale(-1 1)"/></svg><span class="rtext">Reset page (0 removed)</span></button>
+<script src="/horses/horses.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e9f3f237a4974bd6941612621444ef04"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

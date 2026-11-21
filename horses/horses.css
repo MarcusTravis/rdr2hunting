@@ -1,0 +1,15 @@
+@media (max-width:599px){
+  .seg.cats{grid-template-columns:repeat(5,auto)}
+  .seg.cats label{padding:5px 6px;font-size:13px}
+  .searchwrap{padding-left:16px;padding-right:16px}
+  .sortin{padding:0 6px;gap:3px}
+  .sortbtn{font-size:13px}
+}
+.cat-pills{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px;padding:0;list-style:none}
+.cat-pills li{padding:2px 9px;border-radius:999px;background:var(--track);font-size:12px;font-weight:600}
+.hcard{min-width:0}
+.hcard .bars{margin-top:10px}
+.hcard .bars li{grid-template-columns:84px 1fr auto}
+.hcard .prices{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.hcard .where{margin:8px 0 0;font-size:13px;line-height:1.4}
+.hcard .note{margin:6px 0 0;font-size:12.5px;line-height:1.4;color:var(--muted)}

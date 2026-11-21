@@ -1,0 +1,1547 @@
+{
+ "meta": {
+  "game": "Red Dead Redemption 2",
+  "mode": "Story mode",
+  "fence": "Davies Brothers Superior Livestock Dealers, Clemens Cove (Clay and Clive Davies). Opens after \"Horse Flesh for Dinner\" in chapter 3.",
+  "formula": "The fence pays a share of the horse's base value: 4% at bond 0 (stolen or wild only), 8% at bond 1, 12% at bond 2, 20% at bond 3, 30% at bond 4. Bought horses can't be fenced until bond 1.",
+  "lastChecked": "2026-11-21"
+ },
+ "horses": [
+  {
+   "id": "overo-american-paint",
+   "name": "Overo American Paint",
+   "breed": "American Paint",
+   "coat": "Overo",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "splashed-white-american-paint",
+   "name": "Splashed White American Paint",
+   "breed": "American Paint",
+   "coat": "Splashed White",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 140,
+   "fenceable": true,
+   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "note": null,
+   "fence": {
+    "bond0": 5.6,
+    "bond1": 11.2,
+    "bond4": 42.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "tobiano-american-paint",
+   "name": "Tobiano American Paint",
+   "breed": "American Paint",
+   "coat": "Tobiano",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "grey-overo-american-paint",
+   "name": "Grey Overo American Paint",
+   "breed": "American Paint",
+   "coat": "Grey Overo",
+   "aka": [
+    "Boaz"
+   ],
+   "categories": [
+    "stable"
+   ],
+   "base": 425,
+   "fenceable": true,
+   "where": "Tumbleweed stable, epilogue only.",
+   "note": "Same coat as Javier's horse, Boaz.",
+   "fence": {
+    "bond0": null,
+    "bond1": 34.0,
+    "bond4": 127.5
+   },
+   "stablePrice": 425
+  },
+  {
+   "id": "black-american-standardbred",
+   "name": "Black American Standardbred",
+   "breed": "American Standardbred",
+   "coat": "Black",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "buckskin-american-standardbred",
+   "name": "Buckskin American Standardbred",
+   "breed": "American Standardbred",
+   "coat": "Buckskin",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "palomino-dapple-american-standardbred",
+   "name": "Palomino Dapple American Standardbred",
+   "breed": "American Standardbred",
+   "coat": "Palomino Dapple",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 150,
+   "fenceable": true,
+   "where": "Valentine stable from chapter 2. Sometimes turns up in a random encounter.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 12.0,
+    "bond4": 45.0
+   },
+   "stablePrice": 150
+  },
+  {
+   "id": "silver-tail-buckskin-american-standardbred",
+   "name": "Silver Tail Buckskin American Standardbred",
+   "breed": "American Standardbred",
+   "coat": "Silver Tail Buckskin",
+   "aka": [
+    "Ennis"
+   ],
+   "categories": [
+    "stable"
+   ],
+   "base": 400,
+   "fenceable": true,
+   "where": "Tumbleweed stable, epilogue only.",
+   "note": "Same coat as Sean's horse, Ennis.",
+   "fence": {
+    "bond0": null,
+    "bond1": 32.0,
+    "bond4": 120.0
+   },
+   "stablePrice": 400
+  },
+  {
+   "id": "dark-bay-andalusian",
+   "name": "Dark Bay Andalusian",
+   "breed": "Andalusian",
+   "coat": "Dark Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "stable"
+   ],
+   "base": 140,
+   "fenceable": true,
+   "where": "Strawberry stable, or steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 5.6,
+    "bond1": 11.2,
+    "bond4": 42.0
+   },
+   "stablePrice": 140
+  },
+  {
+   "id": "rose-gray-andalusian",
+   "name": "Rose Gray Andalusian",
+   "breed": "Andalusian",
+   "coat": "Rose Gray",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 440,
+   "fenceable": true,
+   "where": "Van Horn stable from chapter 6.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 35.2,
+    "bond4": 132.0
+   },
+   "stablePrice": 440
+  },
+  {
+   "id": "perlino-andalusian",
+   "name": "Perlino Andalusian",
+   "breed": "Andalusian",
+   "coat": "Perlino",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 475,
+   "fenceable": true,
+   "where": "Wild, east of the waterfall at Brandywine Drop.",
+   "note": null,
+   "fence": {
+    "bond0": 19.0,
+    "bond1": 38.0,
+    "bond4": 142.5
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "blanket-appaloosa",
+   "name": "Blanket Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Blanket",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "leopard-blanket-appaloosa",
+   "name": "Leopard Blanket Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Leopard Blanket",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "few-spotted-appaloosa",
+   "name": "Few Spotted Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Few Spotted",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "leopard-appaloosa",
+   "name": "Leopard Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Leopard",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 430,
+   "fenceable": true,
+   "where": "Van Horn stable from chapter 6. Also appears in a couple of story missions.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 34.4,
+    "bond4": 129.0
+   },
+   "stablePrice": 430
+  },
+  {
+   "id": "brown-leopard-appaloosa",
+   "name": "Brown Leopard Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Brown Leopard",
+   "aka": [
+    "Gwydion"
+   ],
+   "categories": [
+    "stable"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Tumbleweed stable, epilogue only.",
+   "note": "Same coat as Trelawny's horse, Gwydion.",
+   "fence": {
+    "bond0": null,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": 450
+  },
+  {
+   "id": "scarred-blanket-appaloosa",
+   "name": "Scarred Blanket Appaloosa",
+   "breed": "Appaloosa",
+   "coat": "Scarred Blanket",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 1,
+   "fenceable": true,
+   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "note": "Base value is only $1, so the fence pays pennies.",
+   "fence": {
+    "bond0": 0.04,
+    "bond1": 0.08,
+    "bond4": 0.3
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "black-arabian",
+   "name": "Black Arabian",
+   "breed": "Arabian",
+   "coat": "Black",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 1050,
+   "fenceable": true,
+   "where": "Saint Denis stable from chapter 4. Also obtainable from the robbed French couple encounter or the mission \"Horse Flesh for Dinner\".",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 84.0,
+    "bond4": 315.0
+   },
+   "stablePrice": 1050
+  },
+  {
+   "id": "rose-grey-bay-arabian",
+   "name": "Rose Grey Bay Arabian",
+   "breed": "Arabian",
+   "coat": "Rose Grey Bay",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 1250,
+   "fenceable": true,
+   "where": "Blackwater stable, epilogue only.",
+   "note": "Highest base value of any story mode horse.",
+   "fence": {
+    "bond0": null,
+    "bond1": 100.0,
+    "bond4": 375.0
+   },
+   "stablePrice": 1250
+  },
+  {
+   "id": "white-arabian",
+   "name": "White Arabian",
+   "breed": "Arabian",
+   "coat": "White",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 1200,
+   "fenceable": true,
+   "where": "Wild, northwest of Lake Isabella in the snowy north.",
+   "note": "The wild one always spawns as a mare.",
+   "fence": {
+    "bond0": 48.0,
+    "bond1": 96.0,
+    "bond4": 360.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "red-chestnut-arabian",
+   "name": "Red Chestnut Arabian",
+   "breed": "Arabian",
+   "coat": "Red Chestnut",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 250,
+   "fenceable": true,
+   "where": "Wild, west of Owanjila.",
+   "note": null,
+   "fence": {
+    "bond0": 10.0,
+    "bond1": 20.0,
+    "bond4": 75.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "warped-brindle-arabian",
+   "name": "Warped Brindle Arabian",
+   "breed": "Arabian",
+   "coat": "Warped Brindle",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Wild, west of the Wapiti Indian Reservation. Added in the PC update.",
+   "note": null,
+   "fence": {
+    "bond0": 18.0,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "bay-roan-ardennes",
+   "name": "Bay Roan Ardennes",
+   "breed": "Ardennes",
+   "coat": "Bay Roan",
+   "aka": [],
+   "categories": [
+    "common",
+    "stable"
+   ],
+   "base": 140,
+   "fenceable": true,
+   "where": "Scarlett Meadows stable from chapter 2, or steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 5.6,
+    "bond1": 11.2,
+    "bond4": 42.0
+   },
+   "stablePrice": 140
+  },
+  {
+   "id": "strawberry-roan-ardennes",
+   "name": "Strawberry Roan Ardennes",
+   "breed": "Ardennes",
+   "coat": "Strawberry Roan",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Van Horn stable from chapter 6.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": 450
+  },
+  {
+   "id": "war-horse-iron-grey-roan-ardennes",
+   "name": "War Horse (Iron Grey Roan Ardennes)",
+   "breed": "Ardennes",
+   "coat": "Iron Grey Roan",
+   "aka": [
+    "War Horse",
+    "Pre-order"
+   ],
+   "categories": [
+    "special"
+   ],
+   "base": null,
+   "fenceable": null,
+   "where": "Pre-order bonus. Claim it free at the Valentine stable from chapter 2.",
+   "note": "Free bonus horse with no listed base value, so the fence payout isn't known.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "mealy-chestnut-belgian-draft",
+   "name": "Mealy Chestnut Belgian Draft",
+   "breed": "Belgian Draft",
+   "coat": "Mealy Chestnut",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Mostly seen pulling wagons. Steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "blond-chestnut-belgian-draft",
+   "name": "Blond Chestnut Belgian Draft",
+   "breed": "Belgian Draft",
+   "coat": "Blond Chestnut",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Mostly seen pulling wagons. Steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "chocolate-roan-dutch-warmblood",
+   "name": "Chocolate Roan Dutch Warmblood",
+   "breed": "Dutch Warmblood",
+   "coat": "Chocolate Roan",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Valentine stable from chapter 2.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": 450
+  },
+  {
+   "id": "seal-brown-dutch-warmblood",
+   "name": "Seal Brown Dutch Warmblood",
+   "breed": "Dutch Warmblood",
+   "coat": "Seal Brown",
+   "aka": [],
+   "categories": [
+    "common",
+    "stable"
+   ],
+   "base": 150,
+   "fenceable": true,
+   "where": "Strawberry stable from chapter 3, or steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 6.0,
+    "bond1": 12.0,
+    "bond4": 45.0
+   },
+   "stablePrice": 150
+  },
+  {
+   "id": "sooty-buckskin-dutch-warmblood",
+   "name": "Sooty Buckskin Dutch Warmblood",
+   "breed": "Dutch Warmblood",
+   "coat": "Sooty Buckskin",
+   "aka": [],
+   "categories": [
+    "common",
+    "stable"
+   ],
+   "base": 150,
+   "fenceable": true,
+   "where": "Scarlett Meadows stable from chapter 2, or steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 6.0,
+    "bond1": 12.0,
+    "bond4": 45.0
+   },
+   "stablePrice": 150
+  },
+  {
+   "id": "buell-cremello-gold-dutch-warmblood",
+   "name": "Buell (Cremello Gold Dutch Warmblood)",
+   "breed": "Dutch Warmblood",
+   "coat": "Cremello Gold",
+   "aka": [
+    "Buell",
+    "Hamish"
+   ],
+   "categories": [
+    "special"
+   ],
+   "base": 12,
+   "fenceable": null,
+   "where": "Given free after \"The Veteran IV\" (chapter 6 on).",
+   "note": "Hamish's horse. Base value is listed at $12, but it isn't confirmed what the fence pays for a gifted horse.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "dapple-dark-gray-hungarian-half-bred",
+   "name": "Dapple Dark Gray Hungarian Half-bred",
+   "breed": "Hungarian Half-bred",
+   "coat": "Dapple Dark Gray",
+   "aka": [],
+   "categories": [
+    "common",
+    "stable"
+   ],
+   "base": 150,
+   "fenceable": true,
+   "where": "Valentine stable from chapter 2, or steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 6.0,
+    "bond1": 12.0,
+    "bond4": 45.0
+   },
+   "stablePrice": 150
+  },
+  {
+   "id": "flaxen-chestnut-hungarian-half-bred",
+   "name": "Flaxen Chestnut Hungarian Half-bred",
+   "breed": "Hungarian Half-bred",
+   "coat": "Flaxen Chestnut",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "piebald-tobiano-hungarian-half-bred",
+   "name": "Piebald Tobiano Hungarian Half-bred",
+   "breed": "Hungarian Half-bred",
+   "coat": "Piebald Tobiano",
+   "aka": [],
+   "categories": [
+    "common",
+    "special"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or keep the one you're given after Guarma.",
+   "note": "Fence prices shown are for a stolen one. The free post-Guarma horse may be treated differently.",
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "grey-kentucky-saddler",
+   "name": "Grey Kentucky Saddler",
+   "breed": "Kentucky Saddler",
+   "coat": "Grey",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 50,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.0,
+    "bond1": 4.0,
+    "bond4": 15.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "chestnut-pinto-kentucky-saddler",
+   "name": "Chestnut Pinto Kentucky Saddler",
+   "breed": "Kentucky Saddler",
+   "coat": "Chestnut Pinto",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 50,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.0,
+    "bond1": 4.0,
+    "bond4": 15.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "black-kentucky-saddler",
+   "name": "Black Kentucky Saddler",
+   "breed": "Kentucky Saddler",
+   "coat": "Black",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 50,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.0,
+    "bond1": 4.0,
+    "bond4": 15.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "silver-bay-kentucky-saddler",
+   "name": "Silver Bay Kentucky Saddler",
+   "breed": "Kentucky Saddler",
+   "coat": "Silver Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 50,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.0,
+    "bond1": 4.0,
+    "bond4": 15.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "buttermilk-buckskin-kentucky-saddler",
+   "name": "Buttermilk Buckskin Kentucky Saddler",
+   "breed": "Kentucky Saddler",
+   "coat": "Buttermilk Buckskin",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "amber-champagne-missouri-fox-trotter",
+   "name": "Amber Champagne Missouri Fox Trotter",
+   "breed": "Missouri Fox Trotter",
+   "coat": "Amber Champagne",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 950,
+   "fenceable": true,
+   "where": "Scarlett Meadows stable from chapter 4.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 76.0,
+    "bond4": 285.0
+   },
+   "stablePrice": 950
+  },
+  {
+   "id": "silver-dapple-pinto-missouri-fox-trotter",
+   "name": "Silver Dapple Pinto Missouri Fox Trotter",
+   "breed": "Missouri Fox Trotter",
+   "coat": "Silver Dapple Pinto",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 950,
+   "fenceable": true,
+   "where": "Blackwater stable in the epilogue. Can show up earlier through a couple of random encounters.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 76.0,
+    "bond4": 285.0
+   },
+   "stablePrice": 950
+  },
+  {
+   "id": "palomino-morgan",
+   "name": "Palomino Morgan",
+   "breed": "Morgan",
+   "coat": "Palomino",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 15,
+   "fenceable": true,
+   "where": "Steal or tame one. The stable only sells it during \"Exit Pursued by a Bruised Ego\".",
+   "note": null,
+   "fence": {
+    "bond0": 0.6,
+    "bond1": 1.2,
+    "bond4": 4.5
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "bay-morgan",
+   "name": "Bay Morgan",
+   "breed": "Morgan",
+   "coat": "Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 55,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.2,
+    "bond1": 4.4,
+    "bond4": 16.5
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "bay-roan-morgan",
+   "name": "Bay Roan Morgan",
+   "breed": "Morgan",
+   "coat": "Bay Roan",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 55,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.2,
+    "bond1": 4.4,
+    "bond4": 16.5
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "flaxen-chestnut-morgan",
+   "name": "Flaxen Chestnut Morgan",
+   "breed": "Morgan",
+   "coat": "Flaxen Chestnut",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 55,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.2,
+    "bond1": 4.4,
+    "bond4": 16.5
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "liver-chestnut-morgan",
+   "name": "Liver Chestnut Morgan",
+   "breed": "Morgan",
+   "coat": "Liver Chestnut",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 27.5,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd. Added in the PC update.",
+   "note": null,
+   "fence": {
+    "bond0": 1.1,
+    "bond1": 2.2,
+    "bond4": 8.25
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "grullo-dun-mustang",
+   "name": "Grullo Dun Mustang",
+   "breed": "Mustang",
+   "coat": "Grullo Dun",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "wild-bay-mustang",
+   "name": "Wild Bay Mustang",
+   "breed": "Mustang",
+   "coat": "Wild Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "tiger-striped-bay-mustang",
+   "name": "Tiger Striped Bay Mustang",
+   "breed": "Mustang",
+   "coat": "Tiger Striped Bay",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Wild only, at Rio Del Lobo Rock southeast of Fort Mercer.",
+   "note": null,
+   "fence": {
+    "bond0": 18.0,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "blue-roan-nokota",
+   "name": "Blue Roan Nokota",
+   "breed": "Nokota",
+   "coat": "Blue Roan",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "white-roan-nokota",
+   "name": "White Roan Nokota",
+   "breed": "Nokota",
+   "coat": "White Roan",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "reverse-dapple-roan-nokota",
+   "name": "Reverse Dapple Roan Nokota",
+   "breed": "Nokota",
+   "coat": "Reverse Dapple Roan",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Saint Denis stable from chapter 4.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": 450
+  },
+  {
+   "id": "scarred-blue-roan-nokota",
+   "name": "Scarred Blue Roan Nokota",
+   "breed": "Nokota",
+   "coat": "Scarred Blue Roan",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 1,
+   "fenceable": true,
+   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "note": "Base value is only $1, so the fence pays pennies.",
+   "fence": {
+    "bond0": 0.04,
+    "bond1": 0.08,
+    "bond4": 0.3
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "dark-bay-shire",
+   "name": "Dark Bay Shire",
+   "breed": "Shire",
+   "coat": "Dark Bay",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "light-grey-shire",
+   "name": "Light Grey Shire",
+   "breed": "Shire",
+   "coat": "Light Grey",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "raven-black-shire",
+   "name": "Raven Black Shire",
+   "breed": "Shire",
+   "coat": "Raven Black",
+   "aka": [],
+   "categories": [
+    "special"
+   ],
+   "base": 130,
+   "fenceable": null,
+   "where": "Hosea's stolen horse in \"Exit Pursued by a Bruised Ego\" (chapter 2). You can keep or sell him at Valentine.",
+   "note": "Base value $130. The horse fence opens later, so most players sell or keep him before it's available, and its payout for him isn't confirmed.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "red-chestnut-suffolk-punch",
+   "name": "Red Chestnut Suffolk Punch",
+   "breed": "Suffolk Punch",
+   "coat": "Red Chestnut",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Mostly seen pulling wagons. Steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "sorrel-suffolk-punch",
+   "name": "Sorrel Suffolk Punch",
+   "breed": "Suffolk Punch",
+   "coat": "Sorrel",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 120,
+   "fenceable": true,
+   "where": "Mostly seen pulling wagons. Steal one.",
+   "note": null,
+   "fence": {
+    "bond0": 4.8,
+    "bond1": 9.6,
+    "bond4": 36.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "black-rabicano-tennessee-walker",
+   "name": "Black Rabicano Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Black Rabicano",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 60,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.4,
+    "bond1": 4.8,
+    "bond4": 18.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "chestnut-tennessee-walker",
+   "name": "Chestnut Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Chestnut",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 60,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.4,
+    "bond1": 4.8,
+    "bond4": 18.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "dapple-bay-tennessee-walker",
+   "name": "Dapple Bay Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Dapple Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 60,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.4,
+    "bond1": 4.8,
+    "bond4": 18.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "red-roan-tennessee-walker",
+   "name": "Red Roan Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Red Roan",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 60,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.4,
+    "bond1": 4.8,
+    "bond4": 18.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "gold-palomino-tennessee-walker",
+   "name": "Gold Palomino Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Gold Palomino",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 60,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 2.4,
+    "bond1": 4.8,
+    "bond4": 18.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "flaxen-roan-tennessee-walker",
+   "name": "Flaxen Roan Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Flaxen Roan",
+   "aka": [
+    "Branwen"
+   ],
+   "categories": [
+    "stable"
+   ],
+   "base": 150,
+   "fenceable": true,
+   "where": "Tumbleweed stable, epilogue only.",
+   "note": "Same coat as Kieran's horse, Branwen.",
+   "fence": {
+    "bond0": null,
+    "bond1": 12.0,
+    "bond4": 45.0
+   },
+   "stablePrice": 150
+  },
+  {
+   "id": "mahogany-bay-tennessee-walker",
+   "name": "Mahogany Bay Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Mahogany Bay",
+   "aka": [],
+   "categories": [
+    "special"
+   ],
+   "base": 60,
+   "fenceable": null,
+   "where": "Given during the prologue mission \"Outlaws From the West\".",
+   "note": "Base value $60, but the fence payout for this mission horse isn't confirmed.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "scarred-black-rabicano-tennessee-walker",
+   "name": "Scarred Black Rabicano Tennessee Walker",
+   "breed": "Tennessee Walker",
+   "coat": "Scarred Black Rabicano",
+   "aka": [],
+   "categories": [
+    "common"
+   ],
+   "base": 1,
+   "fenceable": true,
+   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "note": "Base value is only $1, so the fence pays pennies.",
+   "fence": {
+    "bond0": 0.04,
+    "bond1": 0.08,
+    "bond4": 0.3
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "blood-bay-thoroughbred",
+   "name": "Blood Bay Thoroughbred",
+   "breed": "Thoroughbred",
+   "coat": "Blood Bay",
+   "aka": [],
+   "categories": [
+    "common",
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Steal one, or rope and break one from a wild herd.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "dapple-grey-thoroughbred",
+   "name": "Dapple Grey Thoroughbred",
+   "breed": "Thoroughbred",
+   "coat": "Dapple Grey",
+   "aka": [],
+   "categories": [
+    "wild"
+   ],
+   "base": 130,
+   "fenceable": true,
+   "where": "Mostly wild herds and camps; lawmen and Pinkertons ride them too.",
+   "note": null,
+   "fence": {
+    "bond0": 5.2,
+    "bond1": 10.4,
+    "bond4": 39.0
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "brindle-thoroughbred",
+   "name": "Brindle Thoroughbred",
+   "breed": "Thoroughbred",
+   "coat": "Brindle",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 450,
+   "fenceable": true,
+   "where": "Strawberry stable from chapter 3. Also from a couple of random encounters.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 36.0,
+    "bond4": 135.0
+   },
+   "stablePrice": 450
+  },
+  {
+   "id": "reverse-dapple-black-thoroughbred",
+   "name": "Reverse Dapple Black Thoroughbred",
+   "breed": "Thoroughbred",
+   "coat": "Reverse Dapple Black",
+   "aka": [
+    "Special Edition",
+    "Ultimate Edition"
+   ],
+   "categories": [
+    "special"
+   ],
+   "base": null,
+   "fenceable": null,
+   "where": "Special and Ultimate Edition bonus. Claim it free at the Valentine stable from chapter 2.",
+   "note": "Free bonus horse with no listed base value, so the fence payout isn't known.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "rachel-seal-brown-thoroughbred",
+   "name": "Rachel (Seal Brown Thoroughbred)",
+   "breed": "Thoroughbred",
+   "coat": "Seal Brown",
+   "aka": [
+    "Rachel",
+    "John"
+   ],
+   "categories": [
+    "special"
+   ],
+   "base": 120,
+   "fenceable": null,
+   "where": "John's horse, given free at the start of the epilogue.",
+   "note": "Base value is listed at $120, but it isn't confirmed what the fence pays for a gifted horse.",
+   "fence": {
+    "bond0": null,
+    "bond1": null,
+    "bond4": null
+   },
+   "stablePrice": null
+  },
+  {
+   "id": "dark-bay-turkoman",
+   "name": "Dark Bay Turkoman",
+   "breed": "Turkoman",
+   "coat": "Dark Bay",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 925,
+   "fenceable": true,
+   "where": "Blackwater stable in the epilogue.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 74.0,
+    "bond4": 277.5
+   },
+   "stablePrice": 925
+  },
+  {
+   "id": "gold-turkoman",
+   "name": "Gold Turkoman",
+   "breed": "Turkoman",
+   "coat": "Gold",
+   "aka": [],
+   "categories": [
+    "stable"
+   ],
+   "base": 950,
+   "fenceable": true,
+   "where": "Saint Denis stable from chapter 4.",
+   "note": null,
+   "fence": {
+    "bond0": null,
+    "bond1": 76.0,
+    "bond4": 285.0
+   },
+   "stablePrice": 950
+  },
+  {
+   "id": "silver-turkoman",
+   "name": "Silver Turkoman",
+   "breed": "Turkoman",
+   "coat": "Silver",
+   "aka": [
+    "Silver Dollar"
+   ],
+   "categories": [
+    "stable"
+   ],
+   "base": 950,
+   "fenceable": true,
+   "where": "Tumbleweed stable, epilogue only.",
+   "note": "Same coat as Hosea's horse, Silver Dollar.",
+   "fence": {
+    "bond0": null,
+    "bond1": 76.0,
+    "bond4": 285.0
+   },
+   "stablePrice": 950
+  }
+ ]
+}
