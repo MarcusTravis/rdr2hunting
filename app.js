@@ -101,8 +101,56 @@
     animals.forEach(function (a) { f.appendChild(card(a)); });
     grid.textContent = '';
     grid.appendChild(f);
+    applySort();
     applyFilter();
   }
+
+  /* ---------- sort ---------- */
+  var SORTS = {
+    none: ['Sort by price', ''],
+    desc: ['Sorted by price, highest first', ', sorted by price, highest first'],
+    asc: ['Sorted by price, lowest first', ', sorted by price, lowest first']
+  };
+  var sortMode = 'none', sortBtn = $('sort');
+
+  function sortValue(a) {
+    var best = null;
+    function take(v) { if (typeof v === 'number' && !isNaN(v) && (best == null || v > best)) best = v; }
+    [a.carcass, a.pelt].forEach(function (it) { if (it && it.butcher) take(it.butcher[tier]); });
+    var m = a.pelt && a.pelt.note && /Feather:\s*\$([\d.]+)/.exec(a.pelt.note);
+    if (m) take(parseFloat(m[1]));
+    return best;
+  }
+  function applySort() {
+    var nodes = {};
+    Array.prototype.forEach.call(grid.children, function (c) { nodes[c.dataset.id] = c; });
+    var rows = animals.map(function (a, i) { return { id: a.id, i: i, v: sortValue(a) }; });
+    rows.sort(function (x, y) {
+      if (sortMode !== 'none') {
+        if (x.v == null && y.v != null) return 1;
+        if (y.v == null && x.v != null) return -1;
+        if (x.v != null && x.v !== y.v) return sortMode === 'desc' ? y.v - x.v : x.v - y.v;
+      }
+      return x.i - y.i;
+    });
+    rows.forEach(function (r) { if (nodes[r.id]) grid.appendChild(nodes[r.id]); });
+  }
+  function syncSortUI() {
+    if (!sortBtn) return;
+    sortBtn.dataset.sort = sortMode;
+    sortBtn.setAttribute('aria-pressed', sortMode === 'none' ? 'false' : 'true');
+    sortBtn.setAttribute('aria-label', SORTS[sortMode][0]);
+    sortBtn.title = SORTS[sortMode][0];
+  }
+  function saveSort() {
+    var u = new URL(location.href);
+    if (sortMode === 'none') u.searchParams.delete('sort'); else u.searchParams.set('sort', sortMode);
+    history.replaceState(history.state, '', u.pathname + u.search + u.hash);
+  }
+  if (sortBtn) sortBtn.addEventListener('click', function () {
+    sortMode = sortMode === 'none' ? 'desc' : sortMode === 'desc' ? 'asc' : 'none';
+    syncSortUI(); saveSort(); applySort(); applyFilter();
+  });
 
   /* ---------- matching ---------- */
   // score 0 = word start / prefix, 1 = substring, -1 = none
@@ -138,7 +186,7 @@
       if (ok) n++;
     });
     var total = animals.length;
-    countEl.textContent = query.trim() ? n + ' of ' + total + ' animals' : total + ' animals';
+    countEl.textContent = (query.trim() ? n + ' of ' + total + ' animals' : total + ' animals') + SORTS[sortMode][1];
     emptyEl.hidden = n !== 0;
   }
 
@@ -268,6 +316,9 @@
       if (d.meta && d.meta.lastChecked) {
         t.textContent = d.meta.lastChecked; t.setAttribute('datetime', d.meta.lastChecked);
       } else t.textContent = 'unknown';
+      var sp = new URLSearchParams(location.search).get('sort');
+      if (sp === 'desc' || sp === 'asc') sortMode = sp;
+      syncSortUI();
       renderCards();
       var id = decodeURIComponent(location.hash.slice(1));
       if (id) goTo(id);
