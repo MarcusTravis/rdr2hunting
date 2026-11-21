@@ -34,7 +34,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Buck Pelt",
@@ -49,7 +49,7 @@
      "poor": 1.3
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Mature Venison",
@@ -81,7 +81,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Deer Pelt",
@@ -96,7 +96,7 @@
      "poor": 0.9
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Mature Venison",
@@ -135,7 +135,7 @@
      "poor": 2.6
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Mature Venison",
@@ -173,7 +173,7 @@
      "poor": 3.0
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Mature Venison",
@@ -204,7 +204,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Pronghorn Hide",
@@ -219,7 +219,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "Sources disagree on whether the trapper pays more than the butcher for this pelt, so the trapper price is left blank."
+    "trapperNote": "Sources disagree on what the trapper pays for this pelt."
    },
    "meat": {
     "item": "Mature Venison",
@@ -251,7 +251,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Ram Hide",
@@ -266,7 +266,7 @@
      "poor": 1.1
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Gristly Mutton",
@@ -304,7 +304,7 @@
      "poor": 1.4
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Big Game Meat",
@@ -343,7 +343,7 @@
      "poor": 3.0
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Big Game Meat",
@@ -381,7 +381,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "Sources disagree on whether the trapper pays more than the butcher for this pelt, so the trapper price is left blank."
+    "trapperNote": "Sources disagree on what the trapper pays for this pelt."
    },
    "meat": {
     "item": "Prime Beef",
@@ -405,7 +405,7 @@
     "butcher": null,
     "trapper": null,
     "verified": null,
-    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+    "note": "Not sold whole. It's too heavy to carry, so you can only skin it."
    },
    "pelt": {
     "item": "Boar Pelt",
@@ -420,7 +420,7 @@
      "poor": 0.84
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Tender Pork Loin",
@@ -443,7 +443,7 @@
     "butcher": null,
     "trapper": null,
     "verified": null,
-    "note": "Not sold whole. This animal is too big to stow on a horse, so you can only skin it."
+    "note": "Not sold whole. It's too heavy to carry, so you can only skin it."
    },
    "pelt": {
     "item": "Collared Peccary Pig Pelt",
@@ -458,7 +458,7 @@
      "poor": 0.56
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Tender Pork Loin",
@@ -489,7 +489,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Cougar Pelt",
@@ -504,7 +504,7 @@
      "poor": 2.0
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Big Game Meat",
@@ -534,7 +534,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Panther Pelt",
@@ -549,7 +549,7 @@
      "poor": 2.5
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Big Game Meat",
@@ -580,7 +580,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Wolf Pelt",
@@ -595,7 +595,7 @@
      "poor": 0.6
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Big Game Meat",
@@ -625,7 +625,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Coyote Pelt",
@@ -640,7 +640,7 @@
      "poor": 0.6
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -672,7 +672,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Fox Pelt",
@@ -687,7 +687,7 @@
      "poor": 0.9
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -718,7 +718,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank.",
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed.",
     "note": "Small alligators only. Large alligators are too heavy to carry and can only be skinned."
    },
    "pelt": {
@@ -734,7 +734,7 @@
      "poor": 1.4
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source).",
+    "trapperNote": "Same as the butcher, per player reports.",
     "note": "Story-mode tables list one alligator skin price. Large-alligator skins may differ; not confirmed."
    },
    "meat": {
@@ -767,7 +767,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Rabbit Pelt",
@@ -782,7 +782,7 @@
      "poor": 0.46
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Game Meat",
@@ -813,7 +813,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Raccoon Pelt",
@@ -828,7 +828,7 @@
      "poor": 0.48
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -858,7 +858,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Beaver Pelt",
@@ -873,7 +873,7 @@
      "poor": 1.0
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -901,7 +901,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Muskrat Pelt",
@@ -916,7 +916,7 @@
      "poor": 0.78
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -946,7 +946,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Badger Pelt",
@@ -961,7 +961,7 @@
      "poor": 0.5
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -991,7 +991,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Skunk Pelt",
@@ -1006,7 +1006,7 @@
      "poor": 0.38
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -1037,7 +1037,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Opossum Pelt",
@@ -1052,7 +1052,7 @@
      "poor": 0.36
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -1082,7 +1082,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Armadillo Skin",
@@ -1097,7 +1097,7 @@
      "poor": 0.44
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -1128,7 +1128,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Squirrel Pelt",
@@ -1143,7 +1143,7 @@
      "poor": 0.3
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -1176,7 +1176,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": "Snake Skin",
@@ -1191,7 +1191,7 @@
      "poor": 0.46
     },
     "verified": true,
-    "trapperNote": "Trapper pays the same base price as the butcher for pelts (reported by more than one source)."
+    "trapperNote": "Same as the butcher, per player reports."
    },
    "meat": {
     "item": "Stringy Meat",
@@ -1221,7 +1221,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": null,
@@ -1258,7 +1258,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": null,
@@ -1296,7 +1296,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": null,
@@ -1333,7 +1333,7 @@
      "poor": null
     },
     "verified": true,
-    "trapperNote": "The trapper also takes whole carcasses, but no per-animal trapper carcass price could be confirmed in two sources, so it is left blank."
+    "trapperNote": "The trapper buys carcasses too, but his price isn't confirmed."
    },
    "pelt": {
     "item": null,
