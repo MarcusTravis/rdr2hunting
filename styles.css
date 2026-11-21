@@ -78,12 +78,13 @@ main{padding-top:20px;padding-bottom:8px}
   .searchwrap{flex-wrap:wrap;gap:8px}
   .searchfield{flex:1 1 100%}
   #search{padding-top:10px;padding-bottom:10px}
-  .seg{flex:1 1 0;min-width:0;display:grid;grid-template-columns:repeat(3,1fr)}
-  .seg label{padding:5px 4px;text-align:center;font-size:14px}
-  .sortbtn{height:38px;font-size:14px}
-  .sortin{padding:0 9px;gap:5px}
+  .seg{flex:1 1 0;min-width:0;display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;padding:2px;gap:0}
+  .seg label{padding:5px 8px;text-align:center;font-size:14px}
+  .seg .stars{display:none}
+  .sortbtn{height:38px;font-size:14px;padding:2px}
+  .sortin{padding:0 8px;gap:4px}
 }
-@media (max-width:399px){.seg .stars{display:none}}
+@media (max-width:379px){.seg label{padding:5px 6px}.sortin{padding:0 7px}}
 .count{margin:0;flex-basis:100%;font-size:14px;color:var(--muted)}
 
 .grid{display:grid;grid-template-columns:1fr;gap:18px;outline:none}
@@ -92,6 +93,19 @@ main{padding-top:20px;padding-bottom:8px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow);scroll-margin-top:calc(var(--stick-h,120px) + env(safe-area-inset-top,0px) + 16px);transition:box-shadow .4s,border-color .4s}
 .card[hidden]{display:none}
 .card.flash{border-color:var(--accent);box-shadow:0 0 0 4px var(--hl)}
+.grid.items{gap:12px;grid-template-columns:1fr}
+@media (min-width:560px){.grid.items{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:820px){.grid.items{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1100px){.grid.items{grid-template-columns:repeat(4,1fr)}}
+.item-card{padding:14px;border-radius:16px;min-width:0}
+.item-card h2{font-size:16px;line-height:1.25}
+.item-card .meta{margin:2px 0 0;font-size:12.5px;line-height:1.35;color:var(--muted)}
+.item-card .pill{margin:8px 0 8px;padding:2px 9px;font-size:12px}
+.item-card .bars{gap:5px}
+.item-card .bars li{grid-template-columns:50px 1fr auto;gap:8px;font-size:13px}
+.item-card .bars .val{min-width:48px}
+.item-card .meatrow{align-items:baseline;justify-content:flex-start;gap:6px}
+.item-card .meatrow .val{font-size:20px;letter-spacing:-.01em}
 .card h2{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.01em}
 .card .group{margin:2px 0 0;font-size:13px;color:var(--muted)}
 .pill{display:inline-block;margin:12px 0 4px;padding:3px 10px;border-radius:999px;background:var(--track);font-size:12.5px;font-weight:600}

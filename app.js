@@ -1,8 +1,8 @@
 (function () {
   'use strict';
   var TIERS = { perfect: ['Perfect', '★★★'], good: ['Good', '★★'], poor: ['Poor', '★'] };
-  var animals = [], tier = 'perfect', query = '';
-  var active = -1, shown = [];
+  var animals = [], tier = 'any', query = '';
+  var active = -1, shown = [], itemList = [];
 
   var $ = function (id) { return document.getElementById(id); };
   var grid = $('grid'), input = $('search'), list = $('suggestions'), clearBtn = $('clear');
@@ -19,10 +19,14 @@
 
   /* ---------- cards ---------- */
   function bars(item, scale) {
-    var ul = el('ul', 'bars'), t = TIERS[tier][0];
-    [['Butcher', 'butcher'], ['Trapper', 'trapper']].forEach(function (r) {
-      var v = item[r[1]] ? item[r[1]][tier] : null;
+    return barRows(item.butcher ? item.butcher[tier] : null, item.trapper ? item.trapper[tier] : null, TIERS[tier][0], scale);
+  }
+  function barRows(bv, tv, t, scale) {
+    var ul = el('ul', 'bars');
+    [['Butcher', 'butcher', bv], ['Trapper', 'trapper', tv]].forEach(function (r) {
+      var v = r[2] == null ? null : r[2];
       var li = el('li', v == null ? 'none' : '');
+      if (v == null && r[1] === 'trapper') li.title = 'Trapper price unknown';
       li.appendChild(el('span', 'sr', r[0] + ', ' + t + ': ' + (v == null ? 'no price' : money(v))));
       var lbl = el('span', 'lbl', r[0]); lbl.setAttribute('aria-hidden', 'true');
       var track = el('span', 'track'); track.setAttribute('aria-hidden', 'true');
@@ -96,9 +100,71 @@
     return c;
   }
 
+  /* ---------- "Any" mode: one compact card per item ---------- */
+  var FEATHER = /([A-Z][A-Za-z' -]*Feather):\s*\$([\d.]+)/;
+  function buildItems() {
+    var out = [];
+    animals.forEach(function (a) {
+      [['carcass', 'Whole carcass'], ['pelt', 'Pelt']].forEach(function (k) {
+        var it = a[k[0]];
+        if (it && it.item) ['perfect', 'good', 'poor'].forEach(function (t) {
+          var b = it.butcher ? it.butcher[t] : null, tr = it.trapper ? it.trapper[t] : null;
+          if (b == null) b = null;
+          if (tr == null) tr = null;
+          if (b == null && tr == null) return;
+          out.push({ a: a, key: a.id + ':' + k[0] + ':' + t, kind: k[1], name: it.item, tier: t, b: b, t: tr,
+            v: b != null ? b : tr, max: Math.max(b || 0, tr || 0) });
+        });
+      });
+      var m = a.pelt && !a.pelt.item && a.pelt.note && FEATHER.exec(a.pelt.note);
+      if (m) {
+        var fv = parseFloat(m[2]);
+        out.push({ a: a, key: a.id + ':feather', kind: 'Feather', name: m[1], single: true, v: fv, max: fv });
+      }
+      if (a.meat && a.meat.value != null)
+        out.push({ a: a, key: a.id + ':meat', kind: 'Meat', name: a.meat.item, single: true, v: a.meat.value, max: a.meat.value });
+    });
+    return out;
+  }
+  function itemCard(x, scale) {
+    var c = el('article', 'card item-card');
+    c.dataset.id = x.a.id; c.dataset.key = x.key;
+    c.appendChild(el('h2', null, x.a.name));
+    c.appendChild(el('p', 'meta', x.kind + ' · ' + x.name));
+    var pill = el('p', 'pill');
+    if (x.single) pill.appendChild(document.createTextNode('Any quality'));
+    else {
+      var st = el('span', 'stars', TIERS[x.tier][1]); st.setAttribute('aria-hidden', 'true');
+      pill.appendChild(st); pill.appendChild(document.createTextNode(TIERS[x.tier][0]));
+    }
+    c.appendChild(pill);
+    var label;
+    if (x.single) {
+      var row = el('p', 'meatrow');
+      row.appendChild(el('span', 'val', money(x.v)));
+      row.appendChild(el('span', 'sub', 'each, any quality'));
+      c.appendChild(row);
+      label = x.a.name + ', ' + x.kind + ', any quality: ' + money(x.v) + ' each';
+    } else {
+      c.appendChild(barRows(x.b, x.t, TIERS[x.tier][0], scale));
+      label = x.a.name + ', ' + x.kind + ', ' + TIERS[x.tier][0] + ': butcher ' + (x.b == null ? 'no price' : money(x.b)) +
+        ', trapper ' + (x.t == null ? 'unknown' : money(x.t));
+    }
+    c.setAttribute('aria-label', label);
+    return c;
+  }
+
   function renderCards() {
     var f = document.createDocumentFragment();
-    animals.forEach(function (a) { f.appendChild(card(a)); });
+    grid.classList.toggle('items', tier === 'any');
+    if (tier === 'any') {
+      itemList = buildItems();
+      var scale = Math.max.apply(null, itemList.map(function (x) { return x.max; }).concat(0.01));
+      itemList.forEach(function (x) { f.appendChild(itemCard(x, scale)); });
+    } else {
+      itemList = [];
+      animals.forEach(function (a) { f.appendChild(card(a)); });
+    }
     grid.textContent = '';
     grid.appendChild(f);
     applySort();
@@ -123,8 +189,9 @@
   }
   function applySort() {
     var nodes = {};
-    Array.prototype.forEach.call(grid.children, function (c) { nodes[c.dataset.id] = c; });
-    var rows = animals.map(function (a, i) { return { id: a.id, i: i, v: sortValue(a) }; });
+    var any = tier === 'any';
+    Array.prototype.forEach.call(grid.children, function (c) { nodes[any ? c.dataset.key : c.dataset.id] = c; });
+    var rows = any ? itemList.map(function (x, i) { return { id: x.key, i: i, v: x.v }; }) : animals.map(function (a, i) { return { id: a.id, i: i, v: sortValue(a) }; });
     rows.sort(function (x, y) {
       if (sortMode !== 'none') {
         if (x.v == null && y.v != null) return 1;
@@ -145,6 +212,7 @@
   function saveSort() {
     var u = new URL(location.href);
     if (sortMode === 'none') u.searchParams.delete('sort'); else u.searchParams.set('sort', sortMode);
+    if (tier === 'any') u.searchParams.delete('q'); else u.searchParams.set('q', tier);
     history.replaceState(history.state, '', u.pathname + u.search + u.hash);
   }
   if (sortBtn) sortBtn.addEventListener('click', function () {
@@ -185,8 +253,8 @@
       c.hidden = !ok;
       if (ok) n++;
     });
-    var total = animals.length;
-    countEl.textContent = (query.trim() ? n + ' of ' + total + ' animals' : total + ' animals') + SORTS[sortMode][1];
+    var any = tier === 'any', total = any ? grid.children.length : animals.length, unit = any ? ' items' : ' animals';
+    countEl.textContent = (query.trim() ? n + ' of ' + total + unit : total + unit) + SORTS[sortMode][1];
     emptyEl.hidden = n !== 0;
   }
 
@@ -236,15 +304,19 @@
   }
   var flashTimer;
   function goTo(id) {
-    var c = document.getElementById(id);
-    if (!c || !c.classList.contains('card')) return;
-    if (c.hidden) { input.value = ''; query = ''; clearBtn.hidden = true; applyFilter(); }
+    var sel = '.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]';
+    var cs = grid.querySelectorAll(sel);
+    if (!cs.length) return;
+    if (cs[0].hidden) { input.value = ''; query = ''; clearBtn.hidden = true; applyFilter(); }
+    var c = cs[0];
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     c.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
     document.querySelectorAll('.card.flash').forEach(function (x) { x.classList.remove('flash'); });
-    c.classList.add('flash');
+    Array.prototype.forEach.call(cs, function (x) { x.classList.add('flash'); });
     clearTimeout(flashTimer);
-    flashTimer = setTimeout(function () { c.classList.remove('flash'); }, 1800);
+    flashTimer = setTimeout(function () {
+      Array.prototype.forEach.call(cs, function (x) { x.classList.remove('flash'); });
+    }, 1800);
   }
 
   input.addEventListener('input', function () {
@@ -284,7 +356,7 @@
   document.querySelectorAll('input[name="tier"]').forEach(function (r) {
     r.addEventListener('change', function () {
       if (!r.checked) return;
-      tier = r.value; renderCards();
+      tier = r.value; saveSort(); renderCards();
     });
   });
 
@@ -318,6 +390,10 @@
       } else t.textContent = 'unknown';
       var sp = new URLSearchParams(location.search).get('sort');
       if (sp === 'desc' || sp === 'asc') sortMode = sp;
+      var qp = new URLSearchParams(location.search).get('q');
+      if (qp === 'perfect' || qp === 'good' || qp === 'poor') tier = qp;
+      var radio = $('tier-' + tier);
+      if (radio) radio.checked = true;
       syncSortUI();
       renderCards();
       var id = decodeURIComponent(location.hash.slice(1));
