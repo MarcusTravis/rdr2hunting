@@ -57,6 +57,7 @@
     c.appendChild(el('p', 'group', [h.breed, h.coat].filter(Boolean).join(' · ')));
     var pills = el('ul', 'cat-pills');
     (h.categories || []).forEach(function (k) { if (CATS[k]) pills.appendChild(el('li', null, CATS[k])); });
+    if (h.tag) pills.appendChild(el('li', 'tag', h.tag));
     c.appendChild(pills);
     c.appendChild(barRows(h));
     var f = h.fence || {};
@@ -142,7 +143,7 @@
       if (removed.has(h.id) || !inCat(h)) return;
       if (!q) { out.push({ h: h, i: i, s: 0, via: null }); return; }
       var best = score(h.name, q), via = null;
-      [h.breed, h.coat].concat((h.categories || []).map(function (k) { return CATS[k] || k; })).forEach(function (t) {
+      [h.breed, h.coat, h.tag || ''].concat((h.categories || []).map(function (k) { return CATS[k] || k; })).forEach(function (t) {
         var s = t ? score(t, q) : -1;
         if (s >= 0 && (best < 0 || s < best)) best = s;
       });

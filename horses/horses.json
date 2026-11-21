@@ -4,7 +4,8 @@
   "mode": "Story mode",
   "fence": "Davies Brothers Superior Livestock Dealers, Clemens Cove (Clay and Clive Davies). Opens after \"Horse Flesh for Dinner\" in chapter 3.",
   "formula": "The fence pays a share of the horse's base value: 4% at bond 0 (stolen or wild only), 8% at bond 1, 12% at bond 2, 20% at bond 3, 30% at bond 4. Bought horses can't be fenced until bond 1.",
-  "lastChecked": "2026-11-21"
+  "lastChecked": "2026-11-21",
+  "commonDefinition": "Common means coats that everyday NPCs ride in towns (the game's ambient riding pool): Morgan, Tennessee Walker and Kentucky Saddler."
  },
  "horses": [
   {
@@ -14,12 +15,11 @@
    "coat": "Overo",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds. Lawmen around Emerald Ranch sometimes ride one.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -34,19 +34,18 @@
    "breed": "American Paint",
    "coat": "Splashed White",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 140,
    "fenceable": true,
-   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "where": "Only at stranger camps, not in the wild.",
    "note": null,
    "fence": {
     "bond0": 5.6,
     "bond1": 11.2,
     "bond4": 42.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Stranger camps"
   },
   {
    "id": "tobiano-american-paint",
@@ -55,12 +54,11 @@
    "coat": "Tobiano",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds. Lawmen around Emerald Ranch sometimes ride one.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -98,12 +96,11 @@
    "coat": "Black",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds. Pinkertons and the odd rider use one too.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -119,12 +116,11 @@
    "coat": "Buckskin",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -182,15 +178,14 @@
    "coat": "Dark Bay",
    "aka": [],
    "categories": [
-    "common",
     "stable"
    ],
    "base": 140,
    "fenceable": true,
-   "where": "Strawberry stable, or steal one.",
+   "where": "Strawberry stable. Lawmen outside towns ride one now and then.",
    "note": null,
    "fence": {
-    "bond0": 5.6,
+    "bond0": null,
     "bond1": 11.2,
     "bond4": 42.0
    },
@@ -243,12 +238,11 @@
    "coat": "Blanket",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds and stranger camps. Lawmen and passers-by ride one only rarely.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -264,12 +258,11 @@
    "coat": "Leopard Blanket",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds and stranger camps.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -285,12 +278,11 @@
    "coat": "Few Spotted",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Wild herds (since the PC update) and stranger camps.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -347,19 +339,18 @@
    "breed": "Appaloosa",
    "coat": "Scarred Blanket",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 1,
    "fenceable": true,
-   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "where": "Only from Murfree Brood encounters in Roanoke Ridge.",
    "note": "Base value is only $1, so the fence pays pennies.",
    "fence": {
     "bond0": 0.04,
     "bond1": 0.08,
     "bond4": 0.3
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Murfree Brood"
   },
   {
    "id": "black-arabian",
@@ -468,15 +459,14 @@
    "coat": "Bay Roan",
    "aka": [],
    "categories": [
-    "common",
     "stable"
    ],
    "base": 140,
    "fenceable": true,
-   "where": "Scarlett Meadows stable from chapter 2, or steal one.",
+   "where": "Scarlett Meadows stable from chapter 2. Bounty hunters often ride one.",
    "note": null,
    "fence": {
-    "bond0": 5.6,
+    "bond0": null,
     "bond1": 11.2,
     "bond4": 42.0
    },
@@ -531,19 +521,18 @@
    "breed": "Belgian Draft",
    "coat": "Mealy Chestnut",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Mostly seen pulling wagons. Steal one.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "blond-chestnut-belgian-draft",
@@ -551,19 +540,18 @@
    "breed": "Belgian Draft",
    "coat": "Blond Chestnut",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Mostly seen pulling wagons. Steal one.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "chocolate-roan-dutch-warmblood",
@@ -592,15 +580,14 @@
    "coat": "Seal Brown",
    "aka": [],
    "categories": [
-    "common",
     "stable"
    ],
    "base": 150,
    "fenceable": true,
-   "where": "Strawberry stable from chapter 3, or steal one.",
+   "where": "Strawberry stable from chapter 3. Pinkertons and lawmen outside towns ride one rarely.",
    "note": null,
    "fence": {
-    "bond0": 6.0,
+    "bond0": null,
     "bond1": 12.0,
     "bond4": 45.0
    },
@@ -613,15 +600,14 @@
    "coat": "Sooty Buckskin",
    "aka": [],
    "categories": [
-    "common",
     "stable"
    ],
    "base": 150,
    "fenceable": true,
-   "where": "Scarlett Meadows stable from chapter 2, or steal one.",
+   "where": "Scarlett Meadows stable from chapter 2. Bounty hunters, Pinkertons and prospectors ride them.",
    "note": null,
    "fence": {
-    "bond0": 6.0,
+    "bond0": null,
     "bond1": 12.0,
     "bond4": 45.0
    },
@@ -657,15 +643,14 @@
    "coat": "Dapple Dark Gray",
    "aka": [],
    "categories": [
-    "common",
     "stable"
    ],
    "base": 150,
    "fenceable": true,
-   "where": "Valentine stable from chapter 2, or steal one.",
+   "where": "Valentine stable from chapter 2. Bounty hunters ride them too.",
    "note": null,
    "fence": {
-    "bond0": 6.0,
+    "bond0": null,
     "bond1": 12.0,
     "bond4": 45.0
    },
@@ -678,12 +663,11 @@
    "coat": "Flaxen Chestnut",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds and stranger camps. Bounty hunters and lawmen ride them too.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -699,13 +683,12 @@
    "coat": "Piebald Tobiano",
    "aka": [],
    "categories": [
-    "common",
     "special"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or keep the one you're given after Guarma.",
-   "note": "Fence prices shown are for a stolen one. The free post-Guarma horse may be treated differently.",
+   "where": "Stranger camps and lawmen, especially around Annesburg. You can take one free during \"Dear Uncle Tacitus\".",
+   "note": "Fence prices shown are for one you steal from a camp or a lawman.",
    "fence": {
     "bond0": 5.2,
     "bond1": 10.4,
@@ -725,7 +708,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -746,7 +729,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -767,7 +750,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -788,7 +771,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -809,8 +792,8 @@
    ],
    "base": 120,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
-   "note": null,
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
@@ -870,7 +853,7 @@
    ],
    "base": 15,
    "fenceable": true,
-   "where": "Steal or tame one. The stable only sells it during \"Exit Pursued by a Bruised Ego\".",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest. The stable only sells it during \"Exit Pursued by a Bruised Ego\".",
    "note": null,
    "fence": {
     "bond0": 0.6,
@@ -891,7 +874,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -912,7 +895,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -933,7 +916,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -954,8 +937,8 @@
    ],
    "base": 27.5,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd. Added in the PC update.",
-   "note": null,
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
+   "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 1.1,
     "bond1": 2.2,
@@ -970,12 +953,11 @@
    "coat": "Grullo Dun",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Wild herds in New Austin and near Twin Stack Pass. Del Lobo gang riders use them.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -991,12 +973,11 @@
    "coat": "Wild Bay",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Wild herds in New Austin and near Twin Stack Pass. Del Lobo gang riders use them.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -1032,12 +1013,11 @@
    "coat": "Blue Roan",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds and a few encounters.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -1053,12 +1033,11 @@
    "coat": "White Roan",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds. Marshals and Blackwater police often ride one.",
    "note": null,
    "fence": {
     "bond0": 5.2,
@@ -1093,19 +1072,18 @@
    "breed": "Nokota",
    "coat": "Scarred Blue Roan",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 1,
    "fenceable": true,
-   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "where": "Only from Murfree Brood encounters in Roanoke Ridge.",
    "note": "Base value is only $1, so the fence pays pennies.",
    "fence": {
     "bond0": 0.04,
     "bond1": 0.08,
     "bond4": 0.3
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Murfree Brood"
   },
   {
    "id": "dark-bay-shire",
@@ -1113,19 +1091,18 @@
    "breed": "Shire",
    "coat": "Dark Bay",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "light-grey-shire",
@@ -1133,19 +1110,18 @@
    "breed": "Shire",
    "coat": "Light Grey",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Steal one ridden or hitched around towns, camps and roads.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "raven-black-shire",
@@ -1173,19 +1149,18 @@
    "breed": "Suffolk Punch",
    "coat": "Red Chestnut",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Mostly seen pulling wagons. Steal one.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "sorrel-suffolk-punch",
@@ -1193,19 +1168,18 @@
    "breed": "Suffolk Punch",
    "coat": "Sorrel",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 120,
    "fenceable": true,
-   "where": "Mostly seen pulling wagons. Steal one.",
+   "where": "Pulls wagons in towns and on roads. Almost never ridden, so it's rarely one you can take.",
    "note": null,
    "fence": {
     "bond0": 4.8,
     "bond1": 9.6,
     "bond4": 36.0
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Wagon horse"
   },
   {
    "id": "black-rabicano-tennessee-walker",
@@ -1219,7 +1193,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1240,8 +1214,8 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
-   "note": null,
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "note": "The game also hands you one of these free if you have no main horse.",
    "fence": {
     "bond0": 2.4,
     "bond1": 4.8,
@@ -1261,7 +1235,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1282,7 +1256,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1303,8 +1277,8 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
-   "note": null,
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 2.4,
     "bond1": 4.8,
@@ -1360,19 +1334,18 @@
    "breed": "Tennessee Walker",
    "coat": "Scarred Black Rabicano",
    "aka": [],
-   "categories": [
-    "common"
-   ],
+   "categories": [],
    "base": 1,
    "fenceable": true,
-   "where": "Taken from the Murfree Brood in Roanoke Ridge.",
+   "where": "Only from Murfree Brood encounters in Roanoke Ridge.",
    "note": "Base value is only $1, so the fence pays pennies.",
    "fence": {
     "bond0": 0.04,
     "bond1": 0.08,
     "bond4": 0.3
    },
-   "stablePrice": null
+   "stablePrice": null,
+   "tag": "Murfree Brood"
   },
   {
    "id": "blood-bay-thoroughbred",
@@ -1381,12 +1354,11 @@
    "coat": "Blood Bay",
    "aka": [],
    "categories": [
-    "common",
     "wild"
    ],
    "base": 130,
    "fenceable": true,
-   "where": "Steal one, or rope and break one from a wild herd.",
+   "where": "Mostly wild herds and stranger camps. Lawmen and Pinkertons ride them too.",
    "note": null,
    "fence": {
     "bond0": 5.2,
