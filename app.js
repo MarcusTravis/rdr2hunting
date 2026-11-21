@@ -3,6 +3,7 @@
   var TIERS = { perfect: ['Perfect', '★★★'], good: ['Good', '★★'], poor: ['Poor', '★'] };
   var animals = [], tier = 'any', query = '';
   var active = -1, shown = [], itemList = [];
+  var removed = new Set();
 
   var $ = function (id) { return document.getElementById(id); };
   var grid = $('grid'), input = $('search'), list = $('suggestions'), clearBtn = $('clear');
@@ -66,9 +67,20 @@
     return m;
   }
 
+  var X_SVG = '<svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true" focusable="false"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+  function removeBtn(a) {
+    var b = el('button', 'tempremove');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Temporarily remove ' + a.name);
+    b.title = 'Temporarily remove ' + a.name;
+    b.innerHTML = X_SVG + '<span>Temp remove</span>';
+    return b;
+  }
+
   function card(a) {
     var c = el('article', 'card'); c.id = a.id;
     c.dataset.id = a.id;
+    c.appendChild(removeBtn(a));
     var h = el('h2', null, a.name); c.appendChild(h);
     c.appendChild(el('p', 'group', a.group));
     var pill = el('p', 'pill');
@@ -129,6 +141,7 @@
   function itemCard(x, scale) {
     var c = el('article', 'card item-card');
     c.dataset.id = x.a.id; c.dataset.key = x.key;
+    c.appendChild(removeBtn(x.a));
     c.appendChild(el('h2', null, x.a.name));
     c.appendChild(el('p', 'meta', x.kind + ' · ' + x.name));
     var pill = el('p', 'pill');
@@ -231,9 +244,13 @@
   }
   function matches(q) {
     q = q.trim().toLowerCase();
-    if (!q) return animals.map(function (a, i) { return { a: a, i: i, s: 0, via: null }; });
     var out = [];
+    if (!q) {
+      animals.forEach(function (a, i) { if (!removed.has(a.id)) out.push({ a: a, i: i, s: 0, via: null }); });
+      return out;
+    }
     animals.forEach(function (a, i) {
+      if (removed.has(a.id)) return;
       var best = score(a.name, q), via = null;
       (a.aka || []).forEach(function (k) {
         var s = score(k, q);
@@ -247,14 +264,17 @@
   function applyFilter() {
     var ids = {};
     matches(query).forEach(function (m) { ids[m.a.id] = true; });
-    var n = 0;
+    var n = 0, kept = 0;
     Array.prototype.forEach.call(grid.children, function (c) {
-      var ok = !!ids[c.dataset.id];
-      c.hidden = !ok;
+      var gone = removed.has(c.dataset.id);
+      var ok = !gone && !!ids[c.dataset.id];
+      c.hidden = !ok && !(gone && c.classList.contains('leaving'));
       if (ok) n++;
+      if (!gone) kept++;
     });
-    var any = tier === 'any', total = any ? grid.children.length : animals.length, unit = any ? ' items' : ' animals';
-    countEl.textContent = (query.trim() ? n + ' of ' + total + unit : total + unit) + SORTS[sortMode][1];
+    var any = tier === 'any', total = any ? kept : animals.length - removed.size, unit = any ? ' items' : ' animals';
+    countEl.textContent = (query.trim() ? n + ' of ' + total + unit : total + unit) +
+      (removed.size ? ' · ' + removed.size + ' removed' : '') + SORTS[sortMode][1];
     emptyEl.hidden = n !== 0;
   }
 
@@ -305,6 +325,7 @@
   var flashTimer;
   function goTo(id) {
     var sel = '.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]';
+    if (removed.has(id)) return;
     var cs = grid.querySelectorAll(sel);
     if (!cs.length) return;
     if (cs[0].hidden) { input.value = ''; query = ''; clearBtn.hidden = true; applyFilter(); }
@@ -350,6 +371,61 @@
     var t = e.target, tag = t && t.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)) return;
     e.preventDefault(); input.focus(); input.select();
+  });
+
+  /* ---------- temp remove / reset ---------- */
+  var resetBtn = $('resetpage'), root = document.documentElement;
+  function reduceMotion() { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  function updateReset() {
+    var n = removed.size;
+    if (!resetBtn) return;
+    resetBtn.hidden = n === 0;
+    root.classList.toggle('has-reset', n > 0);
+    var t = resetBtn.querySelector('.rtext');
+    if (t) t.textContent = 'Reset page (' + n + ' removed)';
+    resetBtn.setAttribute('aria-label', 'Reset page and bring back ' + n + ' removed ' + (n === 1 ? 'animal' : 'animals'));
+  }
+  function nextFocusTarget(card) {
+    var all = [], n;
+    for (n = card.nextElementSibling; n; n = n.nextElementSibling) all.push(n);
+    for (n = card.previousElementSibling; n; n = n.previousElementSibling) all.push(n);
+    for (var i = 0; i < all.length; i++) {
+      var c = all[i];
+      if (!c.hidden && !removed.has(c.dataset.id)) {
+        var b = c.querySelector('.tempremove');
+        if (b) return b;
+      }
+    }
+    return input;
+  }
+  grid.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.tempremove') : null;
+    if (!b || !grid.contains(b)) return;
+    e.preventDefault(); e.stopPropagation();
+    var c = b.closest('.card'), id = c.dataset.id;
+    if (removed.has(id)) return;
+    removed.add(id);
+    var target = nextFocusTarget(c);
+    var cs = Array.prototype.filter.call(grid.querySelectorAll('.card'), function (x) { return x.dataset.id === id; });
+    var animate = !reduceMotion();
+    if (animate) cs.forEach(function (x) { x.classList.add('leaving'); });
+    closeList();
+    applyFilter(); updateReset();
+    target.focus({ preventScroll: true });
+    if (animate) setTimeout(function () {
+      cs.forEach(function (x) { x.classList.remove('leaving'); });
+      applyFilter();
+    }, 230);
+  });
+  if (resetBtn) resetBtn.addEventListener('click', function () {
+    removed.clear();
+    tier = 'any'; var r = $('tier-any'); if (r) r.checked = true;
+    sortMode = 'none'; syncSortUI();
+    input.value = ''; query = ''; clearBtn.hidden = true; closeList();
+    history.replaceState(null, '', location.pathname);
+    renderCards(); updateReset();
+    window.scrollTo({ top: 0, behavior: reduceMotion() ? 'auto' : 'smooth' });
+    input.focus({ preventScroll: true });
   });
 
   /* ---------- tier ---------- */
