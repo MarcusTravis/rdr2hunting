@@ -469,9 +469,9 @@
    "id": "lake-isabella",
    "name": "Northwest shore of Lake Isabella",
    "region": "Grizzlies West, Ambarino",
-   "x": 45.2,
+   "x": 44.5,
    "y": 17.0,
-   "r": 1.5,
+   "r": 0.6,
    "breeds": [],
    "conf": "high",
    "epilogue": false
@@ -480,43 +480,55 @@
    "id": "owanjila-west",
    "name": "Woods west of Owanjila",
    "region": "Big Valley, West Elizabeth",
-   "x": 38.4,
+   "x": 37.2,
    "y": 44.6,
-   "r": 1.5,
+   "r": 0.6,
    "breeds": [],
    "conf": "high",
    "epilogue": false
   },
   {
-   "id": "wapiti-mountains",
-   "name": "Mountains west and north of the Wapiti Reservation",
-   "region": "Grizzlies West, Ambarino",
-   "x": 64.8,
-   "y": 12.6,
-   "r": 2.2,
+   "id": "wapiti-north",
+   "name": "Mountains just north of the Wapiti Reservation",
+   "region": "Ambarino",
+   "x": 66.0,
+   "y": 11.8,
+   "r": 0.7,
    "breeds": [],
    "conf": "medium",
    "epilogue": false,
-   "note": "Sources disagree on west or north, so the circle covers both."
+   "note": "RDR2.org and a player table put it here; the Red Dead Wiki says west instead, so both spots are shown."
+  },
+  {
+   "id": "tempest-rim",
+   "name": "Tempest Rim, west of the Wapiti Reservation",
+   "region": "Grizzlies West, Ambarino",
+   "x": 59.7,
+   "y": 12.9,
+   "r": 0.7,
+   "breeds": [],
+   "conf": "medium",
+   "epilogue": false,
+   "note": "The Red Dead Wiki says west of Wapiti, and a player table names Tempest Rim; the other spot is north of the reservation."
   },
   {
    "id": "brandywine-drop",
    "name": "East of the Brandywine Drop waterfall",
    "region": "Roanoke Ridge, New Hanover",
-   "x": 88.6,
-   "y": 14.3,
-   "r": 1.3,
+   "x": 89.0,
+   "y": 14.8,
+   "r": 0.6,
    "breeds": [],
    "conf": "high",
    "epilogue": false
   },
   {
    "id": "rio-del-lobo",
-   "name": "Open ground by Rio Del Lobo Rock",
+   "name": "Open ground just west of Rio Del Lobo Rock",
    "region": "Rio Bravo, New Austin",
-   "x": 29.4,
-   "y": 83.2,
-   "r": 1.4,
+   "x": 28.2,
+   "y": 82.8,
+   "r": 0.6,
    "breeds": [],
    "conf": "high",
    "epilogue": true
@@ -591,7 +603,8 @@
   },
   "warped-brindle-arabian": {
    "areas": [
-    "wapiti-mountains"
+    "wapiti-north",
+    "tempest-rim"
    ],
    "conf": "medium",
    "note": "Added in the PC update."

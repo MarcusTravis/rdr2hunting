@@ -42,6 +42,8 @@
   var inner = $('mapinner'), mapImg = $('mapimg'), toggle = $('zoomtoggle');
   var baseSizes = mapImg.getAttribute('sizes');
   var ASPECT = 3200 / 2441;
+  var MIN_HIT_R = 1.4;   // tap area radius, % of map width
+  var MIN_VIEW = 25;     // tightest zoom, % of map width
   var zoomList = [], zoomed = true;
 
   function setView(vw, vl, vt) {
@@ -64,7 +66,7 @@
       var padX = 6, padY = 6 * ASPECT;
       l -= padX; rt += padX; t -= padY; b += padY;
       // same fraction of width and height keeps the map aspect, so compare both spans as percents
-      var vw = Math.min(100, Math.max(40, rt - l, b - t));
+      var vw = Math.min(100, Math.max(MIN_VIEW, rt - l, b - t));
       var cx = (l + rt) / 2, cy = (t + b) / 2;
       var vl = Math.max(0, Math.min(100 - vw, cx - vw / 2));
       var vt = Math.max(0, Math.min(100 - vw, cy - vw / 2));
@@ -92,27 +94,40 @@
   function draw(list) {
     overlay.textContent = '';
     list.forEach(function (a) {
+      // a group holds an invisible hit circle (so small spots stay easy to tap) and the visible 50% red spot
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'area');
+      var hit = document.createElementNS(NS, 'circle');
+      hit.setAttribute('class', 'hit');
+      hit.setAttribute('cx', (a.x * 32).toFixed(1));
+      hit.setAttribute('cy', (a.y * 24.41).toFixed(1));
+      hit.setAttribute('r', (Math.max(a.r, MIN_HIT_R) * 32).toFixed(1));
+      hit.setAttribute('fill', 'transparent');
+      hit.setAttribute('aria-hidden', 'true');
       var c = document.createElementNS(NS, 'circle');
+      c.setAttribute('class', 'spot');
       c.setAttribute('cx', (a.x * 32).toFixed(1));
       c.setAttribute('cy', (a.y * 24.41).toFixed(1));
       c.setAttribute('r', (a.r * 32).toFixed(1));
       c.setAttribute('fill', '#e02020');
       c.setAttribute('fill-opacity', '0.5');
       c.setAttribute('data-id', a.id);
-      c.setAttribute('tabindex', '0');
-      c.setAttribute('role', 'button');
+      g.setAttribute('tabindex', '0');
+      g.setAttribute('role', 'button');
       var label = a.name + ', ' + a.region;
-      c.setAttribute('aria-label', label);
+      g.setAttribute('aria-label', label);
       var t = document.createElementNS(NS, 'title');
       t.textContent = label;
-      c.appendChild(t);
+      g.appendChild(t);
+      g.appendChild(hit);
+      g.appendChild(c);
       var show = function () { tappedEl.textContent = 'Tapped: ' + label; };
-      c.addEventListener('click', show);
-      c.addEventListener('focus', show);
-      c.addEventListener('keydown', function (e) {
+      g.addEventListener('click', show);
+      g.addEventListener('focus', show);
+      g.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); }
       });
-      overlay.appendChild(c);
+      overlay.appendChild(g);
     });
     tappedEl.textContent = list.length ? 'Tap a circle to see its name.' : 'No areas to show.';
   }

@@ -28,9 +28,11 @@ main{overflow-x:clip}
 .mapbar:has(button[hidden]){display:none}
 .zoomtoggle{font:inherit;font-size:14px;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
 .zoomtoggle:hover{border-color:var(--accent)}
-.mapwrap circle{cursor:pointer;stroke:#8f1010;stroke-opacity:.5;stroke-width:2}
-.mapwrap circle:hover{stroke-opacity:1}
-.mapwrap circle:focus-visible{outline:none;stroke:#fff;stroke-opacity:1;stroke-width:6}
+.mapwrap .area{cursor:pointer;outline:none}
+.mapwrap circle.hit{stroke:none;pointer-events:all}
+.mapwrap circle.spot{stroke:#8f1010;stroke-opacity:.5;stroke-width:2}
+.mapwrap .area:hover circle.spot{stroke-opacity:1}
+.mapwrap .area:focus-visible circle.spot{stroke:#fff;stroke-opacity:1;stroke-width:6}
 .map figcaption{margin:8px 4px 0;font-size:12.5px;color:var(--muted)}
 .tapped{margin:8px 4px 0;font-size:15px;min-height:1.5em}
 
