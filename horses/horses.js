@@ -29,6 +29,17 @@
     b.innerHTML = X_SVG + '<span>Temp remove</span>';
     return b;
   }
+  // Wild horses link to their own map page (a plain link; the card itself is not clickable)
+  var PIN_SVG = '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M8 14.5s4.5-4.2 4.5-8A4.5 4.5 0 0 0 3.5 6.5c0 3.8 4.5 8 4.5 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="8" cy="6.5" r="1.6" fill="currentColor"/></svg>';
+  function locBtn(h) {
+    var row = el('div', 'locrow');
+    var a = el('a', 'locbtn');
+    a.href = '/horses/map/?horse=' + encodeURIComponent(h.id);
+    a.setAttribute('aria-label', 'Map of where to find ' + h.name);
+    a.innerHTML = PIN_SVG + '<span>Location</span>';
+    row.appendChild(a);
+    return row;
+  }
   function barRows(h) {
     var f = h.fence || {};
     var ul = el('ul', 'bars');
@@ -59,6 +70,7 @@
     (h.categories || []).forEach(function (k) { if (CATS[k]) pills.appendChild(el('li', null, CATS[k])); });
     if (h.tag) pills.appendChild(el('li', 'tag', h.tag));
     c.appendChild(pills);
+    if ((h.categories || []).indexOf('wild') >= 0) c.appendChild(locBtn(h));
     c.appendChild(barRows(h));
     var f = h.fence || {};
     var noteShown = false;

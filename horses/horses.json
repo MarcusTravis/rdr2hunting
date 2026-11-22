@@ -708,7 +708,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are mostly around Blackwater and the Great Plains and in Big Valley, with more in Scarlett Meadows, Ambarino and New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -729,7 +729,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are mostly around Blackwater and the Great Plains and in Big Valley, with more in Scarlett Meadows, Ambarino and New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -750,7 +750,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are mostly around Blackwater and the Great Plains and in Big Valley, with more in Scarlett Meadows, Ambarino and New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -771,7 +771,7 @@
    ],
    "base": 50,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are mostly around Blackwater and the Great Plains and in Big Valley, with more in Scarlett Meadows, Ambarino and New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.0,
@@ -792,7 +792,7 @@
    ],
    "base": 120,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the central and eastern Heartlands.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are mostly around Blackwater and the Great Plains and in Big Valley, with more in Scarlett Meadows, Ambarino and New Austin.",
    "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 4.8,
@@ -853,7 +853,7 @@
    ],
    "base": 15,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest. The stable only sells it during \"Exit Pursued by a Bruised Ego\".",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are strongest along Little Creek River in Big Valley and south of Armadillo, with more in Cumberland Forest, near Blackwater and around New Austin. The stable only sells it during \"Exit Pursued by a Bruised Ego\".",
    "note": null,
    "fence": {
     "bond0": 0.6,
@@ -874,7 +874,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are strongest along Little Creek River in Big Valley and south of Armadillo, with more in Cumberland Forest, near Blackwater and around New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -895,7 +895,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are strongest along Little Creek River in Big Valley and south of Armadillo, with more in Cumberland Forest, near Blackwater and around New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -916,7 +916,7 @@
    ],
    "base": 55,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are strongest along Little Creek River in Big Valley and south of Armadillo, with more in Cumberland Forest, near Blackwater and around New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.2,
@@ -937,7 +937,7 @@
    ],
    "base": 27.5,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in the Heartlands and southeast Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds are strongest along Little Creek River in Big Valley and south of Armadillo, with more in Cumberland Forest, near Blackwater and around New Austin.",
    "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 1.1,
@@ -1193,7 +1193,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds roam the Heartlands east of the oil fields, with more in Grizzlies East, near Blackwater and in New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1214,7 +1214,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds roam the Heartlands east of the oil fields, with more in Grizzlies East, near Blackwater and in New Austin.",
    "note": "The game also hands you one of these free if you have no main horse.",
    "fence": {
     "bond0": 2.4,
@@ -1235,7 +1235,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds roam the Heartlands east of the oil fields, with more in Grizzlies East, near Blackwater and in New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1256,7 +1256,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds roam the Heartlands east of the oil fields, with more in Grizzlies East, near Blackwater and in New Austin.",
    "note": null,
    "fence": {
     "bond0": 2.4,
@@ -1277,7 +1277,7 @@
    ],
    "base": 60,
    "fenceable": true,
-   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Also roams wild in Cumberland Forest.",
+   "where": "Ridden by everyday NPCs in and around towns and on the roads all over the map, so it's easy to steal. Wild herds roam the Heartlands east of the oil fields, with more in Grizzlies East, near Blackwater and in New Austin.",
    "note": "Added to the town pool in the PC update.",
    "fence": {
     "bond0": 2.4,

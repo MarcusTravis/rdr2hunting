@@ -1,0 +1,703 @@
+{
+ "meta": {
+  "image": {
+   "src": "/horses/map/rdr2-map.webp",
+   "small": "/horses/map/rdr2-map-1600.webp",
+   "width": 3200,
+   "height": 2441
+  },
+  "credit": "Map © Rockstar Games, used for non-commercial fan reference.",
+  "units": "x and y are percent of the map image's width and height; r is percent of the map width.",
+  "lastChecked": "2026-11-22",
+  "about": "Wild horses spawn by breed in herd areas, and the coat in a herd is random. Areas are approximate."
+ },
+ "areas": [
+  {
+   "id": "wapiti-donner",
+   "name": "West of Donner Falls, south of the Wapiti Reservation",
+   "region": "Ambarino",
+   "x": 67.4,
+   "y": 15.4,
+   "r": 2.2,
+   "breeds": [
+    "Appaloosa",
+    "Kentucky Saddler"
+   ],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "grizzlies-east-donner",
+   "name": "East of Donner Falls",
+   "region": "Grizzlies East, Ambarino",
+   "x": 70.7,
+   "y": 16.1,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler",
+    "American Paint"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "grizzlies-east-north",
+   "name": "East of the Wapiti Reservation",
+   "region": "Grizzlies East, Ambarino",
+   "x": 72.4,
+   "y": 14.2,
+   "r": 1.9,
+   "breeds": [
+    "Tennessee Walker"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "fort-wallace",
+   "name": "By Fort Wallace",
+   "region": "Cumberland Forest, New Hanover",
+   "x": 68.6,
+   "y": 21.0,
+   "r": 2.0,
+   "breeds": [
+    "American Standardbred",
+    "Morgan"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "cumberland-south",
+   "name": "South Cumberland Forest, north of the oil fields",
+   "region": "Cumberland Forest, New Hanover",
+   "x": 68.7,
+   "y": 26.6,
+   "r": 2.0,
+   "breeds": [
+    "Morgan",
+    "Nokota"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "cattail-pond",
+   "name": "By Cattail Pond, west of Valentine",
+   "region": "Grizzlies West / Big Valley",
+   "x": 55.6,
+   "y": 29.7,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler",
+    "Appaloosa"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "little-creek",
+   "name": "Little Creek River, north of Valley View",
+   "region": "Big Valley, West Elizabeth",
+   "x": 46.0,
+   "y": 33.6,
+   "r": 2.4,
+   "breeds": [
+    "American Standardbred",
+    "Morgan"
+   ],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "little-creek-west",
+   "name": "West end of Little Creek River",
+   "region": "Big Valley, West Elizabeth",
+   "x": 41.3,
+   "y": 33.6,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler",
+    "Appaloosa"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "heartlands-oil",
+   "name": "East of the Heartland Oil Fields",
+   "region": "The Heartlands, New Hanover",
+   "x": 69.0,
+   "y": 38.6,
+   "r": 2.4,
+   "breeds": [
+    "Mustang",
+    "Tennessee Walker"
+   ],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "larned-sod",
+   "name": "East Heartlands, around Larned Sod",
+   "region": "The Heartlands, New Hanover",
+   "x": 72.3,
+   "y": 38.1,
+   "r": 1.9,
+   "breeds": [
+    "Tennessee Walker",
+    "Thoroughbred"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "twin-stack",
+   "name": "Near Twin Stack Pass",
+   "region": "The Heartlands, New Hanover",
+   "x": 66.3,
+   "y": 36.3,
+   "r": 1.6,
+   "breeds": [
+    "Mustang"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "heartlands-sw",
+   "name": "Southwest Heartlands",
+   "region": "The Heartlands, New Hanover",
+   "x": 66.1,
+   "y": 40.0,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "blackwater-nw",
+   "name": "Northwest of Blackwater",
+   "region": "Great Plains, West Elizabeth",
+   "x": 51.0,
+   "y": 52.9,
+   "r": 2.2,
+   "breeds": [
+    "Hungarian Half-bred",
+    "Tennessee Walker"
+   ],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "flat-iron-west",
+   "name": "Northeast of Blackwater, on the Flat Iron Lake shore",
+   "region": "West Elizabeth",
+   "x": 56.3,
+   "y": 50.0,
+   "r": 2.0,
+   "breeds": [
+    "Morgan",
+    "Nokota"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "great-plains",
+   "name": "Great Plains, southwest of Blackwater",
+   "region": "Great Plains, West Elizabeth",
+   "x": 50.0,
+   "y": 59.2,
+   "r": 2.2,
+   "breeds": [
+    "Kentucky Saddler"
+   ],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "manzanita",
+   "name": "By Manzanita Post",
+   "region": "Tall Trees, West Elizabeth",
+   "x": 44.4,
+   "y": 59.0,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "blackwater-south",
+   "name": "South of Blackwater, by Flat Iron Lake",
+   "region": "Great Plains, West Elizabeth",
+   "x": 54.3,
+   "y": 61.6,
+   "r": 1.9,
+   "breeds": [
+    "Morgan"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "rhodes-east",
+   "name": "East of Rhodes",
+   "region": "Scarlett Meadows, Lemoyne",
+   "x": 76.5,
+   "y": 57.0,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "rhodes-south",
+   "name": "Southwest of Rhodes",
+   "region": "Scarlett Meadows, Lemoyne",
+   "x": 71.8,
+   "y": 61.8,
+   "r": 2.0,
+   "breeds": [
+    "Kentucky Saddler"
+   ],
+   "conf": "medium",
+   "epilogue": false
+  },
+  {
+   "id": "armadillo-north",
+   "name": "Northeast of Armadillo",
+   "region": "Cholla Springs, New Austin",
+   "x": 32.0,
+   "y": 65.4,
+   "r": 2.0,
+   "breeds": [
+    "Tennessee Walker",
+    "Mustang"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "cholla",
+   "name": "Cholla Springs",
+   "region": "Cholla Springs, New Austin",
+   "x": 21.7,
+   "y": 72.5,
+   "r": 2.2,
+   "breeds": [
+    "Kentucky Saddler",
+    "Appaloosa"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "cholla-east",
+   "name": "West of Armadillo",
+   "region": "Cholla Springs, New Austin",
+   "x": 25.9,
+   "y": 71.7,
+   "r": 1.9,
+   "breeds": [
+    "Thoroughbred",
+    "Hungarian Half-bred"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "mercer-station",
+   "name": "Near Mercer Station",
+   "region": "Cholla Springs, New Austin",
+   "x": 25.0,
+   "y": 76.3,
+   "r": 1.9,
+   "breeds": [
+    "American Standardbred",
+    "Nokota"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "armadillo-south",
+   "name": "South of Armadillo",
+   "region": "New Austin",
+   "x": 31.1,
+   "y": 75.3,
+   "r": 2.2,
+   "breeds": [
+    "Morgan",
+    "Nokota"
+   ],
+   "conf": "high",
+   "epilogue": true
+  },
+  {
+   "id": "don-julio-west",
+   "name": "West of Lake Don Julio",
+   "region": "Rio Bravo, New Austin",
+   "x": 31.4,
+   "y": 80.5,
+   "r": 1.9,
+   "breeds": [
+    "American Standardbred",
+    "Morgan"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "don-julio-east",
+   "name": "East of Lake Don Julio",
+   "region": "Rio Bravo, New Austin",
+   "x": 33.7,
+   "y": 77.9,
+   "r": 1.9,
+   "breeds": [
+    "Kentucky Saddler",
+    "American Paint"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "hennigans-west",
+   "name": "West Hennigan's Stead",
+   "region": "Hennigan's Stead, New Austin",
+   "x": 37.8,
+   "y": 73.6,
+   "r": 1.9,
+   "breeds": [
+    "Tennessee Walker",
+    "Mustang"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "hennigans-central",
+   "name": "Central Hennigan's Stead",
+   "region": "Hennigan's Stead, New Austin",
+   "x": 41.1,
+   "y": 74.0,
+   "r": 1.9,
+   "breeds": [
+    "Tennessee Walker",
+    "Thoroughbred"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "hennigans-south",
+   "name": "South Hennigan's Stead, by the San Luis River",
+   "region": "Hennigan's Stead, New Austin",
+   "x": 42.3,
+   "y": 76.4,
+   "r": 1.9,
+   "breeds": [
+    "Morgan",
+    "Nokota"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "thieves-landing",
+   "name": "South of Thieves' Landing",
+   "region": "Hennigan's Stead, New Austin",
+   "x": 46.8,
+   "y": 70.4,
+   "r": 1.9,
+   "breeds": [
+    "Kentucky Saddler",
+    "American Paint"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "tumbleweed-south",
+   "name": "South of Tumbleweed",
+   "region": "Gaptooth Ridge, New Austin",
+   "x": 11.7,
+   "y": 80.6,
+   "r": 2.2,
+   "breeds": [
+    "American Paint",
+    "Morgan"
+   ],
+   "conf": "high",
+   "epilogue": true
+  },
+  {
+   "id": "benedict-point",
+   "name": "South of Benedict Point",
+   "region": "Rio Bravo, New Austin",
+   "x": 17.2,
+   "y": 83.3,
+   "r": 1.9,
+   "breeds": [
+    "Morgan",
+    "Nokota"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "fort-mercer",
+   "name": "Southwest of Fort Mercer",
+   "region": "Rio Bravo, New Austin",
+   "x": 21.2,
+   "y": 82.9,
+   "r": 1.8,
+   "breeds": [
+    "Mustang"
+   ],
+   "conf": "medium",
+   "epilogue": true
+  },
+  {
+   "id": "lake-isabella",
+   "name": "Northwest shore of Lake Isabella",
+   "region": "Grizzlies West, Ambarino",
+   "x": 45.2,
+   "y": 17.0,
+   "r": 1.5,
+   "breeds": [],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "owanjila-west",
+   "name": "Woods west of Owanjila",
+   "region": "Big Valley, West Elizabeth",
+   "x": 38.4,
+   "y": 44.6,
+   "r": 1.5,
+   "breeds": [],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "wapiti-mountains",
+   "name": "Mountains west and north of the Wapiti Reservation",
+   "region": "Grizzlies West, Ambarino",
+   "x": 64.8,
+   "y": 12.6,
+   "r": 2.2,
+   "breeds": [],
+   "conf": "medium",
+   "epilogue": false,
+   "note": "Sources disagree on west or north, so the circle covers both."
+  },
+  {
+   "id": "brandywine-drop",
+   "name": "East of the Brandywine Drop waterfall",
+   "region": "Roanoke Ridge, New Hanover",
+   "x": 88.6,
+   "y": 14.3,
+   "r": 1.3,
+   "breeds": [],
+   "conf": "high",
+   "epilogue": false
+  },
+  {
+   "id": "rio-del-lobo",
+   "name": "Open ground by Rio Del Lobo Rock",
+   "region": "Rio Bravo, New Austin",
+   "x": 29.4,
+   "y": 83.2,
+   "r": 1.4,
+   "breeds": [],
+   "conf": "high",
+   "epilogue": true
+  },
+  {
+   "id": "oil-fields-west",
+   "name": "West of the Heartland Oil Fields",
+   "region": "The Heartlands, New Hanover",
+   "x": 67.0,
+   "y": 33.6,
+   "r": 1.8,
+   "breeds": [],
+   "conf": "low",
+   "epilogue": false,
+   "note": "One player report."
+  }
+ ],
+ "coats": {
+  "overo-american-paint": {
+   "breed": "American Paint",
+   "conf": "medium"
+  },
+  "tobiano-american-paint": {
+   "breed": "American Paint",
+   "conf": "medium"
+  },
+  "black-american-standardbred": {
+   "breed": "American Standardbred",
+   "conf": "high",
+   "note": "Most often reported along Little Creek River, southeast of Watson’s Cabin."
+  },
+  "buckskin-american-standardbred": {
+   "breed": "American Standardbred",
+   "conf": "medium"
+  },
+  "perlino-andalusian": {
+   "areas": [
+    "brandywine-drop"
+   ],
+   "conf": "high",
+   "note": "Added in the PC update."
+  },
+  "blanket-appaloosa": {
+   "breed": "Appaloosa",
+   "conf": "medium"
+  },
+  "leopard-blanket-appaloosa": {
+   "breed": "Appaloosa",
+   "conf": "medium"
+  },
+  "few-spotted-appaloosa": {
+   "breed": "Appaloosa",
+   "conf": "low",
+   "rare": true,
+   "extra": [
+    "oil-fields-west"
+   ],
+   "note": "Very rare. Turns up among Appaloosa herds since the PC update, and at stranger camps."
+  },
+  "white-arabian": {
+   "areas": [
+    "lake-isabella"
+   ],
+   "conf": "high",
+   "note": "Always spawns as a mare."
+  },
+  "red-chestnut-arabian": {
+   "areas": [
+    "owanjila-west"
+   ],
+   "conf": "high"
+  },
+  "warped-brindle-arabian": {
+   "areas": [
+    "wapiti-mountains"
+   ],
+   "conf": "medium",
+   "note": "Added in the PC update."
+  },
+  "flaxen-chestnut-hungarian-half-bred": {
+   "breed": "Hungarian Half-bred",
+   "conf": "high"
+  },
+  "grey-kentucky-saddler": {
+   "breed": "Kentucky Saddler",
+   "conf": "medium"
+  },
+  "chestnut-pinto-kentucky-saddler": {
+   "breed": "Kentucky Saddler",
+   "conf": "medium"
+  },
+  "black-kentucky-saddler": {
+   "breed": "Kentucky Saddler",
+   "conf": "medium"
+  },
+  "silver-bay-kentucky-saddler": {
+   "breed": "Kentucky Saddler",
+   "conf": "medium"
+  },
+  "buttermilk-buckskin-kentucky-saddler": {
+   "breed": "Kentucky Saddler",
+   "conf": "low",
+   "rare": true,
+   "note": "Added in the PC update and mixed into this breed’s herds. No spot of its own is known."
+  },
+  "palomino-morgan": {
+   "breed": "Morgan",
+   "conf": "medium"
+  },
+  "bay-morgan": {
+   "breed": "Morgan",
+   "conf": "medium"
+  },
+  "bay-roan-morgan": {
+   "breed": "Morgan",
+   "conf": "medium"
+  },
+  "flaxen-chestnut-morgan": {
+   "breed": "Morgan",
+   "conf": "medium"
+  },
+  "liver-chestnut-morgan": {
+   "breed": "Morgan",
+   "conf": "low",
+   "rare": true,
+   "note": "Added in the PC update and mixed into this breed’s herds. No spot of its own is known."
+  },
+  "grullo-dun-mustang": {
+   "breed": "Mustang",
+   "conf": "high"
+  },
+  "wild-bay-mustang": {
+   "breed": "Mustang",
+   "conf": "high"
+  },
+  "tiger-striped-bay-mustang": {
+   "areas": [
+    "rio-del-lobo"
+   ],
+   "conf": "high"
+  },
+  "blue-roan-nokota": {
+   "breed": "Nokota",
+   "conf": "medium"
+  },
+  "white-roan-nokota": {
+   "breed": "Nokota",
+   "conf": "medium"
+  },
+  "black-rabicano-tennessee-walker": {
+   "breed": "Tennessee Walker",
+   "conf": "medium"
+  },
+  "chestnut-tennessee-walker": {
+   "breed": "Tennessee Walker",
+   "conf": "medium"
+  },
+  "dapple-bay-tennessee-walker": {
+   "breed": "Tennessee Walker",
+   "conf": "medium"
+  },
+  "red-roan-tennessee-walker": {
+   "breed": "Tennessee Walker",
+   "conf": "medium"
+  },
+  "gold-palomino-tennessee-walker": {
+   "breed": "Tennessee Walker",
+   "conf": "low",
+   "rare": true,
+   "note": "Added in the PC update and mixed into this breed’s herds. No spot of its own is known."
+  },
+  "blood-bay-thoroughbred": {
+   "breed": "Thoroughbred",
+   "conf": "medium",
+   "note": "Most often reported around Larned Sod in the Heartlands."
+  },
+  "dapple-grey-thoroughbred": {
+   "breed": "Thoroughbred",
+   "conf": "low",
+   "rare": true,
+   "note": "No spot of its own is known; it turns up in Thoroughbred herds."
+  }
+ }
+}

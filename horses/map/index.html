@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wild Horse Map — RDR2 Horse Hunting (Story Mode)</title>
+<meta name="description" content="See roughly where wild horse herds roam in Red Dead Redemption 2, on a map you can filter by breed or by a single coat.">
+<link rel="canonical" href="https://rdr2hunting.pages.dev/horses/map/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RDR2 Hunting Prices">
+<meta property="og:title" content="Wild Horse Map — RDR2 Horse Hunting (Story Mode)">
+<meta property="og:description" content="See roughly where wild horse herds roam in Red Dead Redemption 2, on a map you can filter by breed or by a single coat.">
+<meta property="og:url" content="https://rdr2hunting.pages.dev/horses/map/">
+<meta property="og:image" content="https://rdr2hunting.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wild Horse Map — RDR2 Horse Hunting (Story Mode)">
+<meta name="twitter:description" content="See roughly where wild horse herds roam in Red Dead Redemption 2, on a map you can filter by breed or by a single coat.">
+<meta name="twitter:image" content="https://rdr2hunting.pages.dev/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/horses/horses.css">
+<link rel="stylesheet" href="/horses/map/map.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Wild Horse Map — RDR2 Horse Hunting (Story Mode)","url":"https://rdr2hunting.pages.dev/horses/map/","isPartOf":{"@type":"WebSite","name":"RDR2 Hunting Prices","url":"https://rdr2hunting.pages.dev/"}}</script>
+</head>
+<body>
+<a class="skip" href="#mapfig">Skip to the map</a>
+
+<header class="site-header">
+  <nav class="sitenav" aria-label="Site sections"><a href="/">Animals</a><a href="/horses/" aria-current="page">Horse Hunting</a></nav>
+  <p class="eyebrow">Story mode wild horse reference</p>
+  <h1>Wild Horse Map</h1>
+  <p class="lede">See roughly where wild horses roam. Pick a breed, or open one horse from its card to see just its spots.</p>
+</header>
+
+<main>
+  <section id="head" class="maphead"></section>
+
+  <figure class="map" id="mapfig">
+    <div class="mapbar"><button type="button" id="zoomtoggle" class="zoomtoggle" aria-pressed="true" hidden>Show whole map</button></div>
+    <div class="mapwrap">
+      <div class="mapinner" id="mapinner">
+        <img id="mapimg" src="/horses/map/rdr2-map-1600.webp" srcset="/horses/map/rdr2-map-1600.webp 1600w, /horses/map/rdr2-map.webp 3200w" sizes="(max-width: 1100px) 100vw, 1100px" width="3200" height="2441" alt="Red Dead Redemption 2 world map" decoding="async">
+        <svg id="overlay" viewBox="0 0 3200 2441" preserveAspectRatio="none" aria-label="Wild horse areas"></svg>
+      </div>
+    </div>
+    <figcaption>Map © Rockstar Games, used for non-commercial fan reference.</figcaption>
+  </figure>
+  <p id="tapped" class="tapped" aria-live="polite">Tap a circle to see its name.</p>
+  <p id="error" class="msg error" role="alert" hidden>Sorry, the map data could not be loaded. Check your connection and reload the page. If you opened this file straight from disk, serve it with a local web server instead.</p>
+
+  <section id="places" class="places"></section>
+  <section id="coatlinks" class="places" hidden></section>
+
+  <section class="notes" aria-labelledby="how-h">
+    <h2 id="how-h">How to read this map</h2>
+    <ul>
+      <li>Circles are approximate named areas, not exact spawn points. Look around the whole circle.</li>
+      <li>Herds are random, so an area can be empty when you arrive. Come back later or try a nearby circle.</li>
+      <li>Where circles overlap, the colour gets darker.</li>
+      <li><strong>High confidence</strong> means two or more sources agree. <strong>Medium</strong> means one source. <strong>Low</strong> means no spot of its own is known for that coat, so the circles show where its breed roams.</li>
+    </ul>
+  </section>
+
+  <p class="disclaimer">Unofficial fan reference, not affiliated with Rockstar Games. Red Dead Redemption 2 is a trademark of Take-Two Interactive.</p>
+</main>
+
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<script src="/horses/map/map.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e9f3f237a4974bd6941612621444ef04"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
